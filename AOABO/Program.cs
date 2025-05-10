@@ -4,14 +4,40 @@ using AOABO.OCR;
 using AOABO.Omnibus;
 using Core;
 using Core.Downloads;
-using SixLabors.ImageSharp.ColorSpaces;
+using System.CommandLine;
+
+#if DEBUG
 using System.Text;
 using System.Text.Json;
+#endif
 
 
 class AOABConsole
 {
-    public static async Task Main()
+    static async Task Main(string[] args)
+    {
+        var interactiveOption = new Option<bool>(aliases: new string[] { "--interactive", "-i" },
+                                                 description: "interactive mode");
+        var rootCommand = new RootCommand("Ascendance of a Bookworm Omnibus creator");
+        rootCommand.AddOption(interactiveOption);
+        rootCommand.SetHandler(async (interactive) =>
+            {
+                System.Console.WriteLine($"interactive: {interactive}");
+                if (interactive)
+                {
+
+                    await RunInteractive(interactive);
+                }
+                else
+                {
+                    System.Console.WriteLine($"Non Interactive mode");
+                }
+            },
+            interactiveOption);
+        await rootCommand.InvokeAsync(args);
+    }
+
+    public static async Task RunInteractive(bool isInteractive)
     {
         var executing = true;
         HttpClient client = new HttpClient();
@@ -60,7 +86,7 @@ class AOABConsole
                     await Downloader.DoDownloads(client, login!.AccessToken, inputFolder, Configuration.VolumeNames.Select(x => new Name { ApiSlug = x.ApiSlug, FileName = x.FileName, Quality = x.Quality }), Configuration.Options.Image.MangaQuality);
                     break;
                 case ('5', true):
-            await OCR.BuildOCROverrides(login!);
+                    await OCR.BuildOCROverrides(login!);
                     break;
 #if DEBUG
         case ('6', true):
@@ -244,19 +270,19 @@ class AOABConsole
             }
         }
 
-    await Task.WhenAll(
-        Save("Fanbooks", fanbooks),
-        Save("LNP1", p1),
-        Save("LNP2", p2),
-        Save("LNP3", p3),
-        Save("LNP4", p4),
-        Save("LNP5", p5),
-        Save("MangaP1", mp1),
-        Save("MangaP2", mp2),
-        Save("MangaP3", mp3),
-        Save("SideStories", ss),
-        Save("MangaP4", mp4),
-        Save("Hannelore", han));
+        await Task.WhenAll(
+            Save("Fanbooks", fanbooks),
+            Save("LNP1", p1),
+            Save("LNP2", p2),
+            Save("LNP3", p3),
+            Save("LNP4", p4),
+            Save("LNP5", p5),
+            Save("MangaP1", mp1),
+            Save("MangaP2", mp2),
+            Save("MangaP3", mp3),
+            Save("SideStories", ss),
+            Save("MangaP4", mp4),
+            Save("Hannelore", han));
     }
 
     private static async Task Save(string filename, List<Volume> vols)
@@ -369,8 +395,6 @@ class AOABConsole
         await SaveAll();
     }
 
-
-
     private static bool GetYN()
     {
         while (true)
@@ -438,21 +462,21 @@ class AOABConsole
             }
         }
 
-    await Task.WhenAll(
-        File.WriteAllTextAsync("POVs.txt", sb.ToString()),
+        await Task.WhenAll(
+            File.WriteAllTextAsync("POVs.txt", sb.ToString()),
 
-        //Chronological Chart P1
-        PartChart(chapters, "PartOne.txt", partOne: true),
-        //Chronological Chart P2
-        PartChart(chapters, "PartTwo.txt", partTwo: true),
-        //Chronological Chart P3
-        PartChart(chapters, "PartThree.txt", partThree: true),
-        //Chronological Chart P4
-        PartChart(chapters, "PartFour.txt", partFour: true),
-        //Chronological Chart P5
-        PartChart(chapters, "PartFive.txt", partFive: true),
-        //Chronological Chart Hannelore Y5
-        PartChart(chapters, "Hannelore.txt", hannelore: true));
+            //Chronological Chart P1
+            PartChart(chapters, "PartOne.txt", partOne: true),
+            //Chronological Chart P2
+            PartChart(chapters, "PartTwo.txt", partTwo: true),
+            //Chronological Chart P3
+            PartChart(chapters, "PartThree.txt", partThree: true),
+            //Chronological Chart P4
+            PartChart(chapters, "PartFour.txt", partFour: true),
+            //Chronological Chart P5
+            PartChart(chapters, "PartFive.txt", partFive: true),
+            //Chronological Chart Hannelore Y5
+            PartChart(chapters, "Hannelore.txt", hannelore: true));
     }
 
     private static async Task PartChart(Chapter[] chapters, string name, bool partOne = false, bool partTwo = false, bool partThree = false, bool partFour = false, bool partFive = false, bool hannelore = false)
@@ -507,8 +531,7 @@ class AOABConsole
             }
         }
 
-    await File.WriteAllTextAsync(name, sb.ToString());
+        await File.WriteAllTextAsync(name, sb.ToString());
     }
-
 #endif
 }
