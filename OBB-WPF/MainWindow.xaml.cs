@@ -49,7 +49,7 @@ namespace OBB_WPF
             {
                 using (var client = new HttpClient())
                 {
-                    Settings.Login = await Login.FromFile(client);
+                    Settings.Login = await Login.FromFile(Login.defaultAccountFile, client);
 
                     while(Settings.Login == null)
                     {

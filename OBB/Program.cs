@@ -54,7 +54,7 @@ while (true)
             Settings.SetMiscSettings();
             break;
         case 5:
-            await Login.FromConsole(new HttpClient());
+            await Login.FromConsole(Login.defaultAccountFile, new HttpClient());
             break;
         case 6:
             await JSONBuilder.ExtractJSON();

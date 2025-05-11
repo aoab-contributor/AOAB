@@ -54,8 +54,8 @@ namespace OBB
                 {
                     using (var client = new HttpClient())
                     {
-                        Login = await Login.FromFile(client);
-                        Login = Login ?? await Login.FromConsole(client);
+                        Login = await Login.FromFile(Login.defaultAccountFile, client);
+                        Login = Login ?? await Login.FromConsole(Login.defaultAccountFile, client);
 
                         if (Login != null)
                         {

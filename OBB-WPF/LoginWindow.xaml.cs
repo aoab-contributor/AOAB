@@ -31,7 +31,7 @@ namespace OBB_WPF
 
         private async void Save_Click(object sender, RoutedEventArgs e)
         {
-            Settings.Login = await Login.FromUI(client, Username.Text, Password.Text);
+            Settings.Login = await Login.FromUI(Login.defaultAccountFile, client, Username.Text, Password.Text);
             if (Settings.Login != null)
             {
                 DialogResult = true;

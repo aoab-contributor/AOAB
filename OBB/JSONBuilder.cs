@@ -23,8 +23,8 @@ namespace OBB
 
             using (var client = new HttpClient()) 
             {
-                var login = await Login.FromFile(client);
-                login = login ?? await Login.FromConsole(client);
+                var login = await Login.FromFile(Login.defaultAccountFile, client);
+                login = login ?? await Login.FromConsole(Login.defaultAccountFile, client);
                 var library = await Downloader.GetLibrary(client, login!.AccessToken);
                 foreach (var vol in series.SelectMany(x => x.Volumes))
                 {

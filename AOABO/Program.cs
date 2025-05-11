@@ -9,53 +9,100 @@ using System.CommandLine;
 #if DEBUG
 using System.Text;
 using System.Text.Json;
+using Windows.Gaming.Input;
 #endif
 
 
 class AOABConsole
 {
+    
+    public const string defaultConfigFile = "options.json";   
+    public const string interactiveDescription = "Run interactively [default behavior]";
+    public const string createDescription = "Create an Ascendance of a Bookworm Omnibus";
+    public const string updateDescription = "Update Omnibus Creation Settings";
+    public const string loginDescription   = "Set Login Details";
+    public const string downloadDescriptDownload = "Download Updates";
+    public const string ocrDescription = "OCR Manga Bonus Written Chapters";
+
     static async Task Main(string[] args)
     {
-        var interactiveOption = new Option<bool>(aliases: new string[] { "--interactive", "-i" },
-                                                 description: "interactive mode");
-        var rootCommand = new RootCommand("Ascendance of a Bookworm Omnibus creator");
-        rootCommand.AddOption(interactiveOption);
-        rootCommand.SetHandler(async (interactive) =>
-            {
-                System.Console.WriteLine($"interactive: {interactive}");
-                if (interactive)
-                {
+        //var interactiveMode = new Option<bool>(aliases: new string[] { "--interactive", "-i" },
+        //                                       description: "interactive mode [default behavior if no arguments]");
 
-                    await RunInteractive(interactive);
-                }
-                else
-                {
-                    System.Console.WriteLine($"Non Interactive mode");
-                }
+        //var nonInteractiveMode = new Option<bool>(aliases: new string[] { "--non-interactive", "-ni" },
+        //                                         description: "Force non-interactive mode even when no arguments provided");
+
+
+        var configFileOption = new Option<string>(name: "--config",
+                                                   description: "Configuration file path",
+                                                   getDefaultValue: () => defaultConfigFile)
+                                {
+                                    IsRequired = true
+                                };
+
+        var accountFileOption = new Option<string>(name: "--account",
+                                                    description: "Account file path",
+                                                    getDefaultValue: () => Login.defaultAccountFile)
+                                {
+                                    IsRequired = true
+                                };
+
+        var interactiveCommand = new Command("interactive", interactiveDescription);
+
+        var createCommand = new Command("create", createDescription);
+
+        //var updateCommand = new Command("update", updateDescription);
+
+        var loginCommand = new Command("login", loginDescription);
+
+        var downloadCommand = new Command("download", updateDescription);
+
+        var ocrCommand = new Command("ocr", ocrDescription);
+
+
+        var rootCommand = new RootCommand("Ascendance of a Bookworm Omnibus creator");
+        rootCommand.AddGlobalOption(configFileOption);
+        rootCommand.AddGlobalOption(accountFileOption);
+
+        rootCommand.AddCommand(interactiveCommand);
+        rootCommand.AddCommand(createCommand);
+        rootCommand.AddCommand(loginCommand);
+        rootCommand.AddCommand(ocrCommand);
+
+        rootCommand.SetHandler(async (config, account) =>
+            {
+                await RunInteractive(config, account);
             },
-            interactiveOption);
+            configFileOption, accountFileOption);
+
+        interactiveCommand.SetHandler(async (config, account) =>
+             {
+                 await RunInteractive(config, account);
+             },
+            configFileOption, accountFileOption);
+
         await rootCommand.InvokeAsync(args);
     }
 
-    public static async Task RunInteractive(bool isInteractive)
+    public static async Task RunInteractive(string configFile, string accountFile)
     {
         var executing = true;
         HttpClient client = new HttpClient();
 
-        var login = await Login.FromFile(client);
+        var login = await Login.FromFile(accountFile, client);
 
         while (executing)
         {
             Console.Clear();
 
-            Console.WriteLine("1 - Create an Ascendance of a Bookworm Omnibus");
-            Console.WriteLine("2 - Update Omnibus Creation Settings");
-            Console.WriteLine("3 - Set Login Details");
+            Console.WriteLine($"1 - {createDescription}");
+            Console.WriteLine($"2 - {updateDescription}");
+            Console.WriteLine($"3 - {loginDescription}");
 
             if (login != null)
             {
-                Console.WriteLine("4 - Download Updates");
-                Console.WriteLine("5 - OCR Manga Bonus Written Chapters");
+                Console.WriteLine($"4 - {updateDescription}");
+                Console.WriteLine($"5 - {ocrDescription}");
             }
 
 #if DEBUG
@@ -78,7 +125,7 @@ class AOABConsole
                     break;
                 case ('3', true):
                 case ('3', false):
-                    login = await Login.FromConsole(client);
+                    login = await Login.FromConsole(accountFile, client);
                     break;
                 case ('4', true):
                     var inputFolder = string.IsNullOrWhiteSpace(Configuration.Options.Folder.InputFolder) ? Directory.GetCurrentDirectory() :

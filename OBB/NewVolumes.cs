@@ -25,8 +25,8 @@ namespace OBB
                 Dictionary<SeriesListResponse, List<SeriesVolumeResponse>>? dict = null;
                 using (var client = new HttpClient())
                 {
-                    login = await Login.FromFile(client);
-                    login = login ?? await Login.FromConsole(client);
+                    login = await Login.FromFile(Login.defaultAccountFile, client);
+                    login = login ?? await Login.FromConsole(Login.defaultAccountFile, client);
 
                     if (login != null)
                     {
