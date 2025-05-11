@@ -15,8 +15,6 @@ using Windows.Gaming.Input;
 
 class AOABConsole
 {
-    
-    public const string defaultConfigFile = "options.json";   
     public const string interactiveDescription = "Run interactively [default behavior]";
     public const string createDescription = "Create an Ascendance of a Bookworm Omnibus";
     public const string updateDescription = "Update Omnibus Creation Settings";
@@ -32,24 +30,52 @@ class AOABConsole
         //var nonInteractiveMode = new Option<bool>(aliases: new string[] { "--non-interactive", "-ni" },
         //                                         description: "Force non-interactive mode even when no arguments provided");
 
+        var rootCommand = new RootCommand("Ascendance of a Bookworm Omnibus creator");
 
+        // Global config file option
         var configFileOption = new Option<string>(name: "--config",
                                                    description: "Configuration file path",
-                                                   getDefaultValue: () => defaultConfigFile)
+                                                   getDefaultValue: () => Configuration.defaultConfigFile)
                                 {
                                     IsRequired = true
                                 };
+        rootCommand.AddGlobalOption(configFileOption);
 
+
+        // Global account file option
         var accountFileOption = new Option<string>(name: "--account",
                                                     description: "Account file path",
                                                     getDefaultValue: () => Login.defaultAccountFile)
                                 {
                                     IsRequired = true
                                 };
+        rootCommand.AddGlobalOption(accountFileOption);
 
+
+        // default behavior if no argument provided
+        rootCommand.SetHandler(async (config, account) =>
+        {
+            await RunInteractive(config, account);
+        },
+            configFileOption, accountFileOption);
+
+        // interactive Command
         var interactiveCommand = new Command("interactive", interactiveDescription);
+        rootCommand.AddCommand(interactiveCommand);
+        interactiveCommand.SetHandler(async (config, account) =>
+            {
+                await RunInteractive(config, account);
+            },
+            configFileOption, accountFileOption);
 
+        // create command
         var createCommand = new Command("create", createDescription);
+        rootCommand.AddCommand(createCommand);
+        interactiveCommand.SetHandler(async (config, account) =>      
+            {
+                await OmnibusBuilder.BuildOmnibus();
+            }, 
+            configFileOption, accountFileOption);
 
         //var updateCommand = new Command("update", updateDescription);
 
@@ -60,26 +86,12 @@ class AOABConsole
         var ocrCommand = new Command("ocr", ocrDescription);
 
 
-        var rootCommand = new RootCommand("Ascendance of a Bookworm Omnibus creator");
-        rootCommand.AddGlobalOption(configFileOption);
-        rootCommand.AddGlobalOption(accountFileOption);
 
-        rootCommand.AddCommand(interactiveCommand);
-        rootCommand.AddCommand(createCommand);
+
+        
         rootCommand.AddCommand(loginCommand);
         rootCommand.AddCommand(ocrCommand);
 
-        rootCommand.SetHandler(async (config, account) =>
-            {
-                await RunInteractive(config, account);
-            },
-            configFileOption, accountFileOption);
-
-        interactiveCommand.SetHandler(async (config, account) =>
-             {
-                 await RunInteractive(config, account);
-             },
-            configFileOption, accountFileOption);
 
         await rootCommand.InvokeAsync(args);
     }
@@ -89,6 +101,7 @@ class AOABConsole
         var executing = true;
         HttpClient client = new HttpClient();
 
+        Configuration.Initialize(configFile);
         var login = await Login.FromFile(accountFile, client);
 
         while (executing)
