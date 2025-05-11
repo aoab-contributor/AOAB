@@ -35,7 +35,7 @@ namespace OBB_WPF
             SeriesList? list = null;
             using (var client = new HttpClient())
             {
-                Settings.Login = await Login.FromFile(client);
+                Settings.Login = await Login.FromFile(Login.defaultAccountFile, client);
 
                 if (Settings.Login == null)
                 {
@@ -43,7 +43,7 @@ namespace OBB_WPF
                     var success = loginpage.ShowDialog();
                     if (success.HasValue && success.Value)
                     {
-                        Settings.Login = await Login.FromFile(client);
+                        Settings.Login = await Login.FromFile(Login.defaultAccountFile, client);
                     }
                 }
 

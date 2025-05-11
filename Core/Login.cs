@@ -58,20 +58,20 @@ namespace Core
             return pass;
         }
 
-        public static async Task PersistLoginInfo(string username, string password)
+        public static async Task PersistLoginInfo(string accountFile, string username, string password)
         {
-            await File.WriteAllTextAsync("Account.txt", $"{username}\r\n{Convert.ToBase64String(ToCiphertext(password))}");
+            await File.WriteAllTextAsync(accountFile, $"{username}\r\n{Convert.ToBase64String(ToCiphertext(password))}");
         }
 
-        public static Tuple<string, string>? RetrieveLoginInfo()
+        public static Tuple<string, string>? RetrieveLoginInfo(string accountFile)
         {
-            if (!File.Exists("Account.txt"))
+            if (!File.Exists(accountFile))
             {
                 return null;
             }
             else
             {
-                var text = File.ReadAllText("Account.txt");
+                var text = File.ReadAllText(accountFile);
                 var split = text.Split("\r\n");
 
                 if (split.Length != 2)
@@ -92,7 +92,7 @@ namespace Core
             }
         }
 
-        public static async Task<Login?> FromConsole(HttpClient client)
+        public static async Task<Login> FromConsole(string accountFile, HttpClient client)
         {
             Console.Clear();
             Console.WriteLine("Creating a user account file");
@@ -103,26 +103,26 @@ namespace Core
             Login? login = await CreateLogin(username, password, client);
             if (login != null)
             {
-                await PersistLoginInfo(username, password);
+                await PersistLoginInfo(accountFile, username, password);
             }
 
             return login;
         }
 
-        public static async Task<Login?> FromUI(HttpClient client, string username, string password)
+        public static async Task<Login> FromUI(string accountFile, HttpClient client, string username, string password)
         {
             var login = await CreateLogin(username, password, client);
             if (login != null)
             {
-                await PersistLoginInfo(username, password);
+                await PersistLoginInfo(accountFile, username, password);
             }
 
             return login;
         }
 
-        public static async Task<Login?> FromFile(HttpClient client)
+        public static async Task<Login> FromFile(string accountFile, HttpClient client)
         {
-            var loginInfo = RetrieveLoginInfo();
+            var loginInfo = RetrieveLoginInfo(accountFile);
             if (loginInfo != null)
             {
                 return await CreateLogin(loginInfo.Item1, loginInfo.Item2, client);
