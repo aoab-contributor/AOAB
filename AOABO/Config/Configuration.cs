@@ -1,16 +1,34 @@
 ﻿using AOABO.Omnibus;
 using Core.Downloads;
+using System.Runtime.Serialization;
 using System.Runtime.Serialization.Json;
-using static Core.Downloads.LibraryResponse;
+
 
 namespace AOABO.Config
 {
+    // copy/pasted from: https://stackoverflow.com/questions/2200241/in-c-sharp-how-do-i-define-my-own-exceptions
+    [Serializable]
+    public class CofigurationInitializtionException : Exception
+    {
+        // Constructors
+        public CofigurationInitializtionException()
+            : base("Failed to call Configuration.Initialize before using configuration method.")
+        { }
+
+        // Ensure Exception is Serializable
+        protected CofigurationInitializtionException(SerializationInfo info, StreamingContext ctxt)
+            : base(info, ctxt)
+        { }
+    }
+
     public static class Configuration
     {
+        public const string defaultConfigFile = "options.json";
         public static readonly List<Volume> Volumes;
         public static readonly List<VolumeName> VolumeNames;
         public static readonly Dictionary<string, string> FolderNames;
         public static VolumeOptions Options { get; set; }
+        private static bool isInitialized = false;
 
         static Configuration()
         {
@@ -30,23 +48,6 @@ namespace AOABO.Config
                 FolderNames = list.ToDictionary(x => x.Name, x => x.Folder);
             }
 
-            if (File.Exists("options.txt"))
-            {
-                Options = new VolumeOptions(File.ReadAllText("options.txt"));
-            }
-            else
-            {
-                Options = new VolumeOptions();
-            }
-
-            if (File.Exists("options.json"))
-            {
-                using (var reader = new StreamReader("options.json")) {
-                    var deserializer = new DataContractJsonSerializer(typeof(VolumeOptions));
-                    Options = (deserializer.ReadObject(reader.BaseStream) as VolumeOptions)!;
-                    Options.Upgrade();
-                }
-            }
         }
 
         public static void ReloadVolumes()
@@ -103,8 +104,28 @@ namespace AOABO.Config
             }
         }
 
+        public static void Initialize( string configFile )
+        {
+
+            Options = new VolumeOptions();
+
+            if (File.Exists(configFile))
+            {
+                using (var reader = new StreamReader(configFile)) {
+                    var deserializer = new DataContractJsonSerializer(typeof(VolumeOptions));
+                    Options = (VolumeOptions)deserializer.ReadObject(reader.BaseStream);
+                    Options.Upgrade();
+                }
+            }
+
+            isInitialized = true;
+        }
+
         public static void UpdateOptions()
         {
+            if (!isInitialized)
+                throw new CofigurationInitializtionException();
+
             bool finished = false;
             while (!finished)
             {
@@ -213,6 +234,9 @@ namespace AOABO.Config
 
         private static void SetChapterSettings()
         {
+            if (!isInitialized)
+                throw new CofigurationInitializtionException();
+
             while (true)
             {
                 Console.Clear();
@@ -272,6 +296,9 @@ namespace AOABO.Config
 
         private static void SetImageSettings()
         {
+            if (!isInitialized)
+                throw new CofigurationInitializtionException();
+
             while (true)
             {
                 Console.Clear();
@@ -361,6 +388,9 @@ namespace AOABO.Config
 
         private static void SetFolderSettings()
         {
+            if (!isInitialized)
+                throw new CofigurationInitializtionException();
+
             while (true)
             {
                 Console.Clear();
@@ -394,6 +424,9 @@ namespace AOABO.Config
 
         private static void SetExtraContentSettings()
         {
+            if (!isInitialized)
+                throw new CofigurationInitializtionException();
+
             while (true)
             {
                 Console.Clear();
@@ -480,6 +513,9 @@ namespace AOABO.Config
 
         private static void SetStructure()
         {
+            if (!isInitialized)
+                throw new CofigurationInitializtionException();
+
             Options.OutputStructure = OutputStructure.Flat;
             Console.WriteLine();
             Console.WriteLine("How should the output file be structured?");
