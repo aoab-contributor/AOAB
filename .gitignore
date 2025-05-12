@@ -3,4 +3,5 @@ obj/
 .vs/
 AOABO/AOABO.csproj.user
 AOABO/Properties/PublishProfiles/FolderProfile.pubxml.user
+AOABO/Properties/launchSettings.json
 AOAB.zip

@@ -16,7 +16,7 @@ namespace AOABO.Chapters
                 SortOrder = IsEarly() ? EarlySortOrder : LateSortOrder,
                 Volume = Volume,
                 Year = Year,
-                SubFolder = Configuration.Options.Collection.POVChapterOrdering ? POV : string.Empty,
+                SubFolder = Configuration.Options_.Collection.POVChapterOrdering ? POV : string.Empty,
                 Gallery = CollectionChapter.CollectionEnum.POVGallery,
                 ProcessedInFanbooks = ProcessedInFanbooks,
                 ProcessedInPartFive = ProcessedInPartFive,
@@ -40,7 +40,7 @@ namespace AOABO.Chapters
         {
             SortOrder = IsEarly() ? EarlySortOrder : LateSortOrder;
 
-            if (Configuration.Options.Chapter.BonusChapter == BonusChapterSetting.EndOfBook)
+            if (Configuration.Options_.Chapter.BonusChapter == BonusChapterSetting.EndOfBook)
                 return $"{base.GetPartSubFolder()}\\{Volume}xx-{getVolumeName()} {Configuration.FolderNames["VolumeBonusChapters"]}";
             else
                 return base.GetPartSubFolder();
@@ -50,7 +50,7 @@ namespace AOABO.Chapters
         {
             SortOrder = IsEarly() ? EarlySortOrder : LateSortOrder;
 
-            if (Configuration.Options.Chapter.BonusChapter == BonusChapterSetting.EndOfBook)
+            if (Configuration.Options_.Chapter.BonusChapter == BonusChapterSetting.EndOfBook)
                 return $"{base.GetVolumeSubFolder()}\\{Volume}xx-{getVolumeName()} {Configuration.FolderNames["VolumeBonusChapters"]}";
             else
                 return base.GetVolumeSubFolder();
@@ -60,7 +60,7 @@ namespace AOABO.Chapters
         {
             SortOrder = IsEarly() ? EarlySortOrder : LateSortOrder;
 
-            if (Configuration.Options.Chapter.BonusChapter == BonusChapterSetting.EndOfBook)
+            if (Configuration.Options_.Chapter.BonusChapter == BonusChapterSetting.EndOfBook)
                 return $"{base.GetYearsSubFolder()}\\{Volume}xx-{getVolumeName()} {Configuration.FolderNames["VolumeBonusChapters"]}";
             else
                 return base.GetYearsSubFolder();
@@ -68,7 +68,7 @@ namespace AOABO.Chapters
 
         protected override bool IsEarly()
         {
-            return Configuration.Options.Chapter.BonusChapter == BonusChapterSetting.Chronological;
+            return Configuration.Options_.Chapter.BonusChapter == BonusChapterSetting.Chronological;
         }
     }
 

@@ -25,7 +25,7 @@ namespace AOABO.Chapters
                 Season = startOfBook ? EarlySeason : LateSeason,
                 StartOfBook = startOfBook,
                 Volume = Volume,
-                ChapterName = (Configuration.Options.OutputStructure == OutputStructure.Volumes ? AltName ?? ChapterName : ChapterName),
+                ChapterName = (Configuration.Options_.OutputStructure == OutputStructure.Volumes ? AltName ?? ChapterName : ChapterName),
                 EarlySeason = EarlySeason,
                 EarlyYear = EarlyYear,
                 LateSeason = LateSeason,
