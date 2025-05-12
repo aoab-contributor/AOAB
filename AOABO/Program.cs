@@ -15,7 +15,7 @@ using Windows.Gaming.Input;
 
 class AOABConsole
 {
-    public const string interactiveDescription = "Run interactively [default behavior]";
+    public const string interactiveDescription = "Run interactively. [default behavior]";
     public const string createDescription = "Create an Ascendance of a Bookworm Omnibus";
     public const string updateDescription = "Update Omnibus Creation Settings";
     public const string loginDescription   = "Set Login Details";
@@ -27,35 +27,34 @@ class AOABConsole
         var rootCommand = new RootCommand("Ascendance of a Bookworm Omnibus Creator");
 
 
-        // Global config file option
-        var configFileOption = new Option<string>(name: "--config",
-                                                   description: "Configuration file path",
-                                                   getDefaultValue: () => Configuration.defaultConfigFile)
-                                {
-                                    IsRequired = true
-                                };
+        // Global options //////////////////////////////////////////////////////////////////////////////
+        var configFileOption  = new Option<string>(    name: "--config",
+                                                       description: "Configuration file path",
+                                                       getDefaultValue: () => Configuration.defaultConfigFile);       
+        var accountFileOption = new Option<string>(    name: "--account",
+                                                       description: "Account file path",
+                                                       getDefaultValue: () => Login.defaultAccountFile);
+        var inputFolder       = new Option<string>(    aliases: new string[] { "--input", "--download" },
+                                                       description: "The Source folder - where ebooks will be downloaded and used for generating the omnibus",
+                                                       getDefaultValue: () => string.Empty);
+        var outputFolder      = new Option<string>(    name: "--output",
+                                                       description: "The destination folder - where the omnibus will be generated",
+                                                       getDefaultValue: () => string.Empty );
         rootCommand.AddGlobalOption(configFileOption);
-
-
-        // Global account file option
-        var accountFileOption = new Option<string>(name: "--account",
-                                                    description: "Account file path",
-                                                    getDefaultValue: () => Login.defaultAccountFile)
-                                {
-                                    IsRequired = true
-                                };
         rootCommand.AddGlobalOption(accountFileOption);
+        rootCommand.AddGlobalOption(inputFolder);
+        rootCommand.AddGlobalOption(outputFolder);
 
 
-        // default behavior if no argument provided
+        // default behavior if no argument provided //////////////////////////////////////////////////////////////
         rootCommand.SetHandler(async (config, account) =>
-        {
-            await RunInteractive(config, account);
-        },
+            {
+                await RunInteractive(config, account);
+            },
             configFileOption, accountFileOption);
 
         
-        // interactive Command
+        // interactive Command ////////////////////////////////////////////////////////////////////////////////////////
         var interactiveCommand = new Command("interactive", interactiveDescription);
         rootCommand.AddCommand(interactiveCommand);
         interactiveCommand.SetHandler(async (config, account) =>
@@ -65,24 +64,23 @@ class AOABConsole
             configFileOption, accountFileOption);
 
 
-        // create command
+        // create command ///////////////////////////////////////////////////////////////////////////////////////////
         var omnibusPart = new Option<int>(name: "--part",
-                                           description: $"Which parts to include in the omnibus creation\n * {OmnibusBuilder.ScopeEntireSeries}\n * {OmnibusBuilder.ScopePart1}\n * {OmnibusBuilder.ScopePart2}\n * {OmnibusBuilder.ScopePart3}\n * {OmnibusBuilder.ScopePart4}\n * {OmnibusBuilder.ScopePart5}\n * {OmnibusBuilder.ScopeFanbooks}\n",
-                                           getDefaultValue: () => '0')
-        {
-            IsRequired = true
-        };
+                                          description: $"Which parts to include in the omnibus creation\n  {OmnibusBuilder.ScopeEntireSeries}\n  {OmnibusBuilder.ScopePart1}\n  {OmnibusBuilder.ScopePart2}\n  {OmnibusBuilder.ScopePart3}\n  {OmnibusBuilder.ScopePart4}\n  {OmnibusBuilder.ScopePart5}\n  {OmnibusBuilder.ScopeFanbooks}\n",
+                                          getDefaultValue: () => 0);
         var createCommand = new Command("create", createDescription)
         {
             omnibusPart
         };
         rootCommand.AddCommand(createCommand);
-        createCommand.SetHandler(async (config, _, part) =>      
+        createCommand.SetHandler(async (config, input, output, part) =>      
             {
                 Configuration.Initialize(config);
+                Configuration.SetFolders(input, output);
                 await OmnibusBuilder.BuildOmnibus(Convert.ToString(part)[0]);
+                Configuration.PersistOptions();
             }, 
-            configFileOption, accountFileOption, omnibusPart);
+            configFileOption, inputFolder, outputFolder, omnibusPart);
 
         //var updateCommand = new Command("update", updateDescription);
 
@@ -148,9 +146,9 @@ class AOABConsole
                     login = await Login.FromConsole(accountFile, client);
                     break;
                 case ('4', true):
-                    var inputFolder = string.IsNullOrWhiteSpace(Configuration.Options.Folder.InputFolder) ? Directory.GetCurrentDirectory() :
-                        Configuration.Options.Folder.InputFolder.Length > 1 && Configuration.Options.Folder.InputFolder[1].Equals(':') ? Configuration.Options.Folder.InputFolder : Directory.GetCurrentDirectory() + "\\" + Configuration.Options.Folder.InputFolder;
-                    await Downloader.DoDownloads(client, login!.AccessToken, inputFolder, Configuration.VolumeNames.Select(x => new Name { ApiSlug = x.ApiSlug, FileName = x.FileName, Quality = x.Quality }), Configuration.Options.Image.MangaQuality);
+                    var inputFolder = string.IsNullOrWhiteSpace(Configuration.Options_.Folder.InputFolder) ? Directory.GetCurrentDirectory() :
+                        Configuration.Options_.Folder.InputFolder.Length > 1 && Configuration.Options_.Folder.InputFolder[1].Equals(':') ? Configuration.Options_.Folder.InputFolder : Directory.GetCurrentDirectory() + "\\" + Configuration.Options_.Folder.InputFolder;
+                    await Downloader.DoDownloads(client, login!.AccessToken, inputFolder, Configuration.VolumeNames.Select(x => new Name { ApiSlug = x.ApiSlug, FileName = x.FileName, Quality = x.Quality }), Configuration.Options_.Image.MangaQuality);
                     break;
                 case ('5', true):
                     await OCR.BuildOCROverrides(login!);

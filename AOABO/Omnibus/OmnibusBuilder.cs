@@ -49,15 +49,18 @@ namespace AOABO.Omnibus
             Console.WriteLine();
 
             await BuildOmnibus(key.KeyChar);
+            Console.WriteLine();
+            Console.WriteLine($"Press any key to continue.");
+            Console.ReadKey();
         }
 
         public static async Task BuildOmnibus(char omnibusPart)
         {
-            var inputFolder = string.IsNullOrWhiteSpace(Configuration.Options.Folder.InputFolder) ? Directory.GetCurrentDirectory() :
-                Configuration.Options.Folder.InputFolder.Length > 1 && Configuration.Options.Folder.InputFolder[1].Equals(':') ? Configuration.Options.Folder.InputFolder : Directory.GetCurrentDirectory() + "\\" + Configuration.Options.Folder.InputFolder;
+            var inputFolder = string.IsNullOrWhiteSpace(Configuration.Options_.Folder.InputFolder) ? Directory.GetCurrentDirectory() :
+                Configuration.Options_.Folder.InputFolder.Length > 1 && Configuration.Options_.Folder.InputFolder[1].Equals(':') ? Configuration.Options_.Folder.InputFolder : Directory.GetCurrentDirectory() + "\\" + Configuration.Options_.Folder.InputFolder;
 
-            var outputFolder = string.IsNullOrWhiteSpace(Configuration.Options.Folder.OutputFolder) ? Directory.GetCurrentDirectory() :
-                Configuration.Options.Folder.OutputFolder.Length > 1 && Configuration.Options.Folder.OutputFolder[1].Equals(':') ? Configuration.Options.Folder.OutputFolder : Directory.GetCurrentDirectory() + "\\" + Configuration.Options.Folder.OutputFolder;
+            var outputFolder = string.IsNullOrWhiteSpace(Configuration.Options_.Folder.OutputFolder) ? Directory.GetCurrentDirectory() :
+                Configuration.Options_.Folder.OutputFolder.Length > 1 && Configuration.Options_.Folder.OutputFolder[1].Equals(':') ? Configuration.Options_.Folder.OutputFolder : Directory.GetCurrentDirectory() + "\\" + Configuration.Options_.Folder.OutputFolder;
 
             var OverrideDirectory = inputFolder + "\\Overrides\\";
 
@@ -139,7 +142,7 @@ namespace AOABO.Omnibus
             await outProcessor.UnpackFolder($"{inputFolder}\\inputtemp");
             outProcessor.Chapters.Clear();
 
-            IFolder folder = Configuration.Options.OutputYearFormat == 0 ? new YearNumberFolder() : new YearFolder();
+            IFolder folder = Configuration.Options_.OutputYearFormat == 0 ? new YearNumberFolder() : new YearFolder();
             Configuration.ReloadVolumes();
 
             var povChapters = new List<Chapters.MoveableChapter>();
@@ -225,7 +228,7 @@ namespace AOABO.Omnibus
                             Contents = string.Empty,
                             CssFiles = new List<string>(),
                             Name = chapter.ChapterName + ".xhtml",
-                            SubFolder = folder.MakeFolder(chapter.GetSubFolder(Configuration.Options.OutputStructure), Configuration.Options.StartYear, chapter.Year),
+                            SubFolder = folder.MakeFolder(chapter.GetSubFolder(Configuration.Options_.OutputStructure), Configuration.Options_.StartYear, chapter.Year),
                             Set = chapter.Set,
                             Priority = chapter.Priority
                         };
@@ -266,7 +269,7 @@ namespace AOABO.Omnibus
                             }
                         }
 
-                        if (Configuration.Options.Chapter.UpdateChapterNames)
+                        if (Configuration.Options_.Chapter.UpdateChapterNames)
                         {
                             var match = chapterTitleRegex.Match(newChapter.Contents);
                             if(match.Success)
@@ -319,7 +322,7 @@ namespace AOABO.Omnibus
             outProcessor.Metadata.Add("<dc:identifier id=\"pub-id\">1</dc:identifier>");
             outProcessor.Metadata.Add($"<meta property=\"dcterms:modified\">{DateTime.UtcNow.ToString("yyyy-MM-ddThh:mm:ssZ")}</meta>");
 
-            await outProcessor.FullOutput(outputFolder, false, Configuration.Options.UseHumanReadableFileStructure, Configuration.Options.Folder.DeleteTempFolder, bookTitle, Configuration.Options.Image.MaxWidth, Configuration.Options.Image.MaxHeight, Configuration.Options.Image.Quality);
+            await outProcessor.FullOutput(outputFolder, false, Configuration.Options_.UseHumanReadableFileStructure, Configuration.Options_.Folder.DeleteTempFolder, bookTitle, Configuration.Options_.Image.MaxWidth, Configuration.Options_.Image.MaxHeight, Configuration.Options_.Image.Quality);
 
             if (Directory.Exists($"{inputFolder}\\inputtemp")) Directory.Delete($"{inputFolder}\\inputtemp", true);
 
@@ -329,26 +332,23 @@ namespace AOABO.Omnibus
                 Console.WriteLine("Books that could not be found while making this omnibus:");
                 foreach (var file in missingFiles) Console.WriteLine(file);
             }
-            Console.WriteLine();
-
-            Console.WriteLine($"\"{bookTitle}\" creation complete. Press any key to continue.");
-            Console.ReadKey();
+            Console.WriteLine($"\"{bookTitle}\" creation complete.");
         }
 
         private static List<Chapters.Chapter> BuildChapterList(Volume volume, Func<Chapters.Chapter, bool> filter)
         {
             var chapters = new List<Chapters.Chapter>();
 
-            if (Configuration.Options.Chapter.UpdateChapterNames)
+            if (Configuration.Options_.Chapter.UpdateChapterNames)
             {
                 volume.POVChapters.ForEach(x => x.ApplyPOVToTitle());
                 volume.BonusChapters.ForEach(x => x.ApplyPOVToTitle());
                 volume.MangaChapters.ForEach(x => x.ApplyPOVToTitle());
             }
 
-            if (Configuration.Options.Chapter.IncludeRegularChapters)
+            if (Configuration.Options_.Chapter.IncludeRegularChapters)
             {
-                if (!Configuration.Options.Image.IncludeImagesInChapters)
+                if (!Configuration.Options_.Image.IncludeImagesInChapters)
                 {
                     volume.Chapters.ForEach(x => x.RemoveInserts());
                 }
@@ -357,18 +357,18 @@ namespace AOABO.Omnibus
 
             if (volume.Gallery != null && filter(volume.Gallery))
             {
-                var startGallery = volume.Gallery.GetChapter(true, Configuration.Options.Image.SplashImages == GallerySetting.Start, Configuration.Options.Image.ChapterImages == GallerySetting.Start);
+                var startGallery = volume.Gallery.GetChapter(true, Configuration.Options_.Image.SplashImages == GallerySetting.Start, Configuration.Options_.Image.ChapterImages == GallerySetting.Start);
                 if (startGallery != null) chapters.Add(startGallery);
 
-                var endGallery = volume.Gallery.GetChapter(false, Configuration.Options.Image.SplashImages == GallerySetting.End, Configuration.Options.Image.ChapterImages == GallerySetting.End);
+                var endGallery = volume.Gallery.GetChapter(false, Configuration.Options_.Image.SplashImages == GallerySetting.End, Configuration.Options_.Image.ChapterImages == GallerySetting.End);
                 if (endGallery != null) chapters.Add(endGallery);
             }
 
-            if (!Configuration.Options.Image.IncludeImagesInChapters)
+            if (!Configuration.Options_.Image.IncludeImagesInChapters)
             {
                 volume.BonusChapters.ForEach(x => x.RemoveInserts());
             }
-            switch (Configuration.Options.Chapter.BonusChapter)
+            switch (Configuration.Options_.Chapter.BonusChapter)
             {
                 case BonusChapterSetting.Chronological:
                     chapters.AddRange(volume.BonusChapters.Where(filter));
@@ -378,41 +378,41 @@ namespace AOABO.Omnibus
                     break;
             }
 
-            if (Configuration.Options.Chapter.MangaChapters != BonusChapterSetting.LeaveOut)
+            if (Configuration.Options_.Chapter.MangaChapters != BonusChapterSetting.LeaveOut)
             {
                 chapters.AddRange(volume.MangaChapters.Where(filter));
             }
 
-            if (Configuration.Options.Extras.ComfyLifeChapters != ComfyLifeSetting.None && volume.ComfyLifeChapter != null && filter(volume.ComfyLifeChapter))
+            if (Configuration.Options_.Extras.ComfyLifeChapters != ComfyLifeSetting.None && volume.ComfyLifeChapter != null && filter(volume.ComfyLifeChapter))
             {
                 chapters.Add(volume.ComfyLifeChapter);
             }
 
-            if ((Configuration.Options.Extras.CharacterSheets == CharacterSheets.All) && (volume.CharacterSheet != null) && filter(volume.CharacterSheet))
+            if ((Configuration.Options_.Extras.CharacterSheets == CharacterSheets.All) && (volume.CharacterSheet != null) && filter(volume.CharacterSheet))
             {
                 chapters.Add(volume.CharacterSheet);
             }
-            else if ((Configuration.Options.Extras.CharacterSheets == CharacterSheets.PerPart) && (volume.CharacterSheet != null) && volume.CharacterSheet.PartSheet && filter(volume.CharacterSheet))
+            else if ((Configuration.Options_.Extras.CharacterSheets == CharacterSheets.PerPart) && (volume.CharacterSheet != null) && volume.CharacterSheet.PartSheet && filter(volume.CharacterSheet))
             {
                 chapters.Add(volume.CharacterSheet);
             }
 
-            if (Configuration.Options.Extras.Maps)
+            if (Configuration.Options_.Extras.Maps)
             {
                 chapters.AddRange(volume.Maps.Where(filter));
             }
 
-            if (volume.Afterword != null && Configuration.Options.Extras.Afterword != AfterwordSetting.None && filter(volume.Afterword))
+            if (volume.Afterword != null && Configuration.Options_.Extras.Afterword != AfterwordSetting.None && filter(volume.Afterword))
             {
                 chapters.Add(volume.Afterword);
             }
 
-            if(Configuration.Options.Extras.Polls && volume.CharacterPoll != null && filter(volume.CharacterPoll))
+            if(Configuration.Options_.Extras.Polls && volume.CharacterPoll != null && filter(volume.CharacterPoll))
             {
                 chapters.Add(volume.CharacterPoll);
             }
 
-            if (Configuration.Options.Collection.POVChapterCollection)
+            if (Configuration.Options_.Collection.POVChapterCollection)
             {
                 chapters.AddRange(volume.BonusChapters.Where(x => !string.IsNullOrWhiteSpace(x.POV)).Select(x => x.GetCollectionChapter()).Where(filter));
                 chapters.AddRange(volume.POVChapters.Where(x => !string.IsNullOrWhiteSpace(x.POV)).Select(x => x.GetCollectionChapter()).Where(filter));

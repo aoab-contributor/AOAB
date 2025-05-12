@@ -17,8 +17,8 @@ namespace AOABO.OCR
 
         internal static async Task BuildOCROverrides(Login login)
         {
-            var inputFolder = string.IsNullOrWhiteSpace(Configuration.Options.Folder.InputFolder) ? Directory.GetCurrentDirectory() :
-                Configuration.Options.Folder.InputFolder.Length > 1 && Configuration.Options.Folder.InputFolder[1].Equals(':') ? Configuration.Options.Folder.InputFolder : Directory.GetCurrentDirectory() + "\\" + Configuration.Options.Folder.InputFolder;
+            var inputFolder = string.IsNullOrWhiteSpace(Configuration.Options_.Folder.InputFolder) ? Directory.GetCurrentDirectory() :
+                Configuration.Options_.Folder.InputFolder.Length > 1 && Configuration.Options_.Folder.InputFolder[1].Equals(':') ? Configuration.Options_.Folder.InputFolder : Directory.GetCurrentDirectory() + "\\" + Configuration.Options_.Folder.InputFolder;
 
             var overrideDirectory = inputFolder + "\\Overrides";
 
@@ -30,7 +30,7 @@ namespace AOABO.OCR
                 if (vol.BonusChapters.Where(x => x.OCR != null).Any(x => !File.Exists(overrideDirectory + "\\" + x.OverrideName + ".xhtml")))
                 {
                     var volname = Configuration.VolumeNames.First(x => x.InternalName.Equals(vol.InternalName));
-                    var fileName = Configuration.Options.Folder.InputFolder + "\\" + string.Format(volname.FileName, 3840);
+                    var fileName = Configuration.Options_.Folder.InputFolder + "\\" + string.Format(volname.FileName, 3840);
                     if (!File.Exists(fileName))
                         await Downloader.DownloadSpecificVolume(volname.ApiSlug, login.AccessToken, fileName, new HttpClient());
 

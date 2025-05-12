@@ -27,8 +27,9 @@ namespace AOABO.Config
         public static readonly List<Volume> Volumes;
         public static readonly List<VolumeName> VolumeNames;
         public static readonly Dictionary<string, string> FolderNames;
-        public static VolumeOptions Options { get; set; }
+        private static VolumeOptions Options { get; set; }
         private static bool isInitialized = false;
+        private static string ConfigFilePath = string.Empty;
 
         static Configuration()
         {
@@ -104,21 +105,38 @@ namespace AOABO.Config
             }
         }
 
-        public static void Initialize( string configFile )
+        public static void Initialize(string configFile = defaultConfigFile)
         {
-
-            Options = new VolumeOptions();
-
-            if (File.Exists(configFile))
+            if (!isInitialized)
             {
-                using (var reader = new StreamReader(configFile)) {
-                    var deserializer = new DataContractJsonSerializer(typeof(VolumeOptions));
-                    Options = (VolumeOptions)deserializer.ReadObject(reader.BaseStream);
-                    Options.Upgrade();
-                }
-            }
+                Options = new VolumeOptions();
 
-            isInitialized = true;
+                if (File.Exists(configFile))
+                {
+                    using (var reader = new StreamReader(configFile))
+                    {
+                        var deserializer = new DataContractJsonSerializer(typeof(VolumeOptions));
+                        Options = (VolumeOptions)deserializer.ReadObject(reader.BaseStream);
+                        Options.Upgrade();
+                    }
+                }
+                ConfigFilePath = configFile;
+                isInitialized = true;
+            }
+        }
+
+        // Band-aid needed to ensure that Options has been initialized before it is accessed
+        // Set Options to private and access it through this accessor
+        // TODO: Need to refactor somehow... TBD
+        public static VolumeOptions Options_
+        {
+            get
+            {
+                if (!isInitialized)
+                    throw new CofigurationInitializtionException();
+
+                return Options;
+            }
         }
 
         public static void UpdateOptions()
@@ -166,19 +184,23 @@ namespace AOABO.Config
                         break;
                 }
             }
-            
-            if (File.Exists("options.txt"))
+
+            PersistOptions();
+        }
+
+        public static void PersistOptions()
+        {
+            if (isInitialized)
             {
-                File.Delete("options.txt");
-            }
-            if (File.Exists("options.json"))
-            {
-                File.Delete("options.json");
-            }
-            var serializer = new DataContractJsonSerializer(typeof(VolumeOptions));
-            using (var stream = File.Open("options.json", FileMode.Create))
-            {
-                serializer.WriteObject(stream, Options);
+                if (File.Exists(ConfigFilePath))
+                {
+                    File.Delete(ConfigFilePath);
+                }
+                var serializer = new DataContractJsonSerializer(typeof(VolumeOptions));
+                using (var stream = File.Open(ConfigFilePath, FileMode.Create))
+                {
+                    serializer.WriteObject(stream, Options);
+                }
             }
         }
 
@@ -385,6 +407,24 @@ namespace AOABO.Config
                 }
             }
         }
+
+        public static void SetFolders(string? inputFolder, string? outputFolder)
+        {
+            if (!isInitialized)
+                throw new CofigurationInitializtionException();
+
+            if (!string.IsNullOrEmpty(inputFolder))
+            {
+                Options.Folder.InputFolder = inputFolder;
+            }
+
+            if (!string.IsNullOrEmpty(outputFolder))
+            {
+                Options.Folder.OutputFolder = outputFolder;
+            }
+        }
+
+
 
         private static void SetFolderSettings()
         {
