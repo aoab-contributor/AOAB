@@ -82,7 +82,7 @@ class AOABConsole
             }, 
             configFileOption, inputFolder, outputFolder, omnibusPart);
 
-        //var updateCommand = new Command("update", updateDescription);
+        var updateCommand = new Command("update", updateDescription);
 
         var loginCommand = new Command("login", loginDescription);
 
