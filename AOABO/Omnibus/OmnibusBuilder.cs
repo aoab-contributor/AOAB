@@ -8,6 +8,15 @@ namespace AOABO.Omnibus
 {
     public class OmnibusBuilder
     {
+        //TODO: Cleanup part selection to separate selector from description - add checks to ensure valid selection
+        public const string ScopeEntireSeries = "0: Entire Series";
+        public const string ScopePart1 = "1: Part One (Daughter of a Soldier)";
+        public const string ScopePart2 = "2: Part Two (Apprentice Shrine Maiden)";
+        public const string ScopePart3 = "3: Part Three (Adopted Daughter of an Archduke)";
+        public const string ScopePart4 = "4: Part Four (Founder of the Royal Academy's So-Called Library Committee)";
+        public const string ScopePart5 = "5: Part Five (Avatar of a Goddess)";
+		public const string ScopePart6 = "6: Hannelore's Fifth Year at the Royal Academy";
+        public const string ScopeFanbooks = "7: Fanbooks";
         public enum PartToProcess
         {
             EntireSeries,
@@ -22,7 +31,27 @@ namespace AOABO.Omnibus
 
         private static Regex chapterTitleRegex = new Regex("<h1>[\\s\\S]*?<\\/h1>");
 
-        public static async Task BuildOmnibus()
+        public static async Task InteractivelyBuildOmnibus()
+        {
+            Console.Clear();
+            Console.WriteLine("Creating an Ascendance of a Bookworm Omnibus");
+            Console.WriteLine();
+            Console.WriteLine("How much of the series should be in the output file?");
+            Console.WriteLine(ScopeEntireSeries);
+            Console.WriteLine(ScopePart1);
+            Console.WriteLine(ScopePart2);
+            Console.WriteLine(ScopePart3);
+            Console.WriteLine(ScopePart4);
+            Console.WriteLine(ScopePart5);
+            Console.WriteLine(ScopePart6);
+            Console.WriteLine(ScopeFanbooks);
+            var key = Console.ReadKey();
+            Console.WriteLine();
+
+            await BuildOmnibus(key.KeyChar);
+        }
+
+        public static async Task BuildOmnibus(char omnibusPart)
         {
             var inputFolder = string.IsNullOrWhiteSpace(Configuration.Options.Folder.InputFolder) ? Directory.GetCurrentDirectory() :
                 Configuration.Options.Folder.InputFolder.Length > 1 && Configuration.Options.Folder.InputFolder[1].Equals(':') ? Configuration.Options.Folder.InputFolder : Directory.GetCurrentDirectory() + "\\" + Configuration.Options.Folder.InputFolder;
@@ -32,24 +61,9 @@ namespace AOABO.Omnibus
 
             var OverrideDirectory = inputFolder + "\\Overrides\\";
 
-
-            Console.Clear();
-            Console.WriteLine("Creating an Ascendance of a Bookworm Omnibus");
-            Console.WriteLine();
-            Console.WriteLine("How much of the series should be in the output file?");
-            Console.WriteLine("0: Entire Series");
-            Console.WriteLine("1: Part One (Daughter of a Soldier)");
-            Console.WriteLine("2: Part Two (Apprentice Shrine Maiden)");
-            Console.WriteLine("3: Part Three (Adopted Daughter of an Archduke)");
-            Console.WriteLine("4: Part Four (Founder of the Royal Academy's So-Called Library Committee)");
-            Console.WriteLine("5: Part Five (Avatar of a Goddess)");
-            Console.WriteLine("6: Hannelore's Fifth Year at the Royal Academy");
-            Console.WriteLine("7: Fanbooks");
-            var key = Console.ReadKey();
-            Console.WriteLine();
             PartToProcess partScope;
             string bookTitle;
-            switch (key.KeyChar)
+            switch (omnibusPart)
             {
                 case '1':
                     partScope = PartToProcess.PartOne;
