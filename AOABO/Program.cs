@@ -24,13 +24,8 @@ class AOABConsole
 
     static async Task Main(string[] args)
     {
-        //var interactiveMode = new Option<bool>(aliases: new string[] { "--interactive", "-i" },
-        //                                       description: "interactive mode [default behavior if no arguments]");
+        var rootCommand = new RootCommand("Ascendance of a Bookworm Omnibus Creator");
 
-        //var nonInteractiveMode = new Option<bool>(aliases: new string[] { "--non-interactive", "-ni" },
-        //                                         description: "Force non-interactive mode even when no arguments provided");
-
-        var rootCommand = new RootCommand("Ascendance of a Bookworm Omnibus creator");
 
         // Global config file option
         var configFileOption = new Option<string>(name: "--config",
@@ -59,6 +54,7 @@ class AOABConsole
         },
             configFileOption, accountFileOption);
 
+        
         // interactive Command
         var interactiveCommand = new Command("interactive", interactiveDescription);
         rootCommand.AddCommand(interactiveCommand);
@@ -68,14 +64,25 @@ class AOABConsole
             },
             configFileOption, accountFileOption);
 
+
         // create command
-        var createCommand = new Command("create", createDescription);
+        var omnibusPart = new Option<int>(name: "--part",
+                                           description: $"Which parts to include in the omnibus creation\n * {OmnibusBuilder.ScopeEntireSeries}\n * {OmnibusBuilder.ScopePart1}\n * {OmnibusBuilder.ScopePart2}\n * {OmnibusBuilder.ScopePart3}\n * {OmnibusBuilder.ScopePart4}\n * {OmnibusBuilder.ScopePart5}\n * {OmnibusBuilder.ScopeFanbooks}\n",
+                                           getDefaultValue: () => '0')
+        {
+            IsRequired = true
+        };
+        var createCommand = new Command("create", createDescription)
+        {
+            omnibusPart
+        };
         rootCommand.AddCommand(createCommand);
-        interactiveCommand.SetHandler(async (config, account) =>      
+        createCommand.SetHandler(async (config, _, part) =>      
             {
-                await OmnibusBuilder.BuildOmnibus();
+                Configuration.Initialize(config);
+                await OmnibusBuilder.BuildOmnibus(Convert.ToString(part)[0]);
             }, 
-            configFileOption, accountFileOption);
+            configFileOption, accountFileOption, omnibusPart);
 
         //var updateCommand = new Command("update", updateDescription);
 
@@ -130,7 +137,7 @@ class AOABConsole
             {
                 case ('1', true):
                 case ('1', false):
-                    await OmnibusBuilder.BuildOmnibus();
+                    await OmnibusBuilder.InteractivelyBuildOmnibus();
                     break;
                 case ('2', true):
                 case ('2', false):
