@@ -124,9 +124,9 @@ class AOABConsole
             }
 
 #if DEBUG
-    Console.WriteLine("6 - Redo JSON Files");
-    Console.WriteLine("7 - Add Bonus Chapter");
-    Console.WriteLine("8 - Create Tables");
+            Console.WriteLine("6 - Redo JSON Files");
+            Console.WriteLine("7 - Add Bonus Chapter");
+            Console.WriteLine("8 - Create Tables");
 #endif
 
             var key = Console.ReadKey();
@@ -148,30 +148,29 @@ class AOABConsole
                 case ('4', true):
                     var inputFolder = string.IsNullOrWhiteSpace(Configuration.Options_.Folder.InputFolder) ? Directory.GetCurrentDirectory() :
                         Configuration.Options_.Folder.InputFolder.Length > 1 && Configuration.Options_.Folder.InputFolder[1].Equals(':') ? Configuration.Options_.Folder.InputFolder : Directory.GetCurrentDirectory() + "\\" + Configuration.Options_.Folder.InputFolder;
-                    await Downloader.DoDownloads(client, login!.AccessToken, inputFolder, Configuration.VolumeNames.Select(x => new Name { ApiSlug = x.ApiSlug, FileName = x.FileName, Quality = x.Quality }), Configuration.Options_.Image.MangaQuality);
+                    await Downloader.DoDownloads(client, login!.AccessToken, inputFolder, Configuration.VolumeNames.Select(x => new Name { ApiSlug = x.ApiSlug, FileName = x.FileName, Quality = x.Quality! }), Configuration.Options_.Image.MangaQuality);
                     break;
                 case ('5', true):
                     await OCR.BuildOCROverrides(login!);
                     break;
 #if DEBUG
-        case ('6', true):
-        case ('6', false):
-            await RedoJSON();
-            break;
-        case ('7', true):
-        case ('7', false):
-            await AddChapter();
-            break;
-        case ('8', true):
-        case ('8', false):
-            await CreateTables();
-            break;
+                case ('6', true):
+                case ('6', false):
+                    await RedoJSON();
+                    break;
+                case ('7', true):
+                case ('7', false):
+                    await AddChapter();
+                    break;
+                case ('8', true):
+                case ('8', false):
+                    await CreateTables();
+                    break;
 #endif
                 default:
                     executing = false;
                     break;
             }
-            ;
         }
     }
 

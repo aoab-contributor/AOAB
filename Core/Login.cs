@@ -6,6 +6,7 @@ namespace Core
 {
     public class Login
     {
+        public const string defaultAccountFile = "Account.txt";
         public readonly string AccessToken;
         private Login(string accessToken)
         {
@@ -92,7 +93,7 @@ namespace Core
             }
         }
 
-        public static async Task<Login> FromConsole(string accountFile, HttpClient client)
+        public static async Task<Login?> FromConsole(string accountFile, HttpClient client)
         {
             Console.Clear();
             Console.WriteLine("Creating a user account file");
@@ -109,7 +110,7 @@ namespace Core
             return login;
         }
 
-        public static async Task<Login> FromUI(string accountFile, HttpClient client, string username, string password)
+        public static async Task<Login?> FromUI(string accountFile, HttpClient client, string username, string password)
         {
             var login = await CreateLogin(username, password, client);
             if (login != null)
@@ -120,7 +121,7 @@ namespace Core
             return login;
         }
 
-        public static async Task<Login> FromFile(string accountFile, HttpClient client)
+        public static async Task<Login?> FromFile(string accountFile, HttpClient client)
         {
             var loginInfo = RetrieveLoginInfo(accountFile);
             if (loginInfo != null)
