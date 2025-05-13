@@ -84,7 +84,21 @@ class AOABConsole
 
         var updateCommand = new Command("update", updateDescription);
 
+        
+        // Login Command ///////////////////////////////////////////////////////////////////////////////////////////
         var loginCommand = new Command("login", loginDescription);
+        loginCommand.SetHandler(async (account) =>
+            {
+                HttpClient client = new HttpClient();
+                string username = Login.ConsoleGetUsername();
+                string password = Login.ConsoleGetPassword();
+                var login = await Login.CreateLogin(username, password, client);
+                if (login != null)
+                {
+                    await Login.PersistLoginInfo(account, username, password);
+                }
+            },
+            accountFileOption);
 
         var downloadCommand = new Command("download", updateDescription);
 
