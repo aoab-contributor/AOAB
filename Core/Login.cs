@@ -134,7 +134,7 @@ namespace Core
             }
         }
 
-        private static async Task<Login?> CreateLogin(string username, string plaintextPassword, HttpClient client)
+        public static async Task<Login?> CreateLogin(string username, string plaintextPassword, HttpClient client)
         {
             try
             {
