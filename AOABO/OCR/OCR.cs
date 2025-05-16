@@ -4,6 +4,7 @@ using Core;
 using Core.Downloads;
 using System.Drawing;
 using System.Drawing.Imaging;
+using System.IO;
 using System.IO.Compression;
 using System.Runtime.InteropServices;
 using System.Text.RegularExpressions;
@@ -13,40 +14,47 @@ namespace AOABO.OCR
 {
     internal class OCR
     {
-        static string tempDirectory = Directory.GetCurrentDirectory() + "\\temp";
-
-        internal static async Task BuildOCROverrides(Login login)
+        private static string getTempDirectory(string baseFolder, string identifier = "")
         {
-            var inputFolder = string.IsNullOrWhiteSpace(Configuration.Options_.Folder.InputFolder) ? Directory.GetCurrentDirectory() :
-                Configuration.Options_.Folder.InputFolder.Length > 1 && Configuration.Options_.Folder.InputFolder[1].Equals(':') ? Configuration.Options_.Folder.InputFolder : Directory.GetCurrentDirectory() + "\\" + Configuration.Options_.Folder.InputFolder;
+            string idstring = String.IsNullOrWhiteSpace(identifier) ? "" : identifier.Trim() + "_";
+            string foldername = Path.Join(baseFolder,
+                                          idstring + "_" + Path.GetFileNameWithoutExtension(Path.GetRandomFileName()));
+            return foldername;
+        }
 
+        internal static async Task BuildOCROverrides(Login login, HttpClient client)
+        {
+            string tempDirectoryBase = getTempDirectory(Path.GetTempPath(), "AOAB");
+            var inputFolder = Configuration.Options_.Folder.InputFolder;
             var overrideDirectory = inputFolder + "\\Overrides";
+            Directory.CreateDirectory(overrideDirectory);
+            Directory.CreateDirectory(tempDirectoryBase);
 
-            if (!Directory.Exists(overrideDirectory)) Directory.CreateDirectory(overrideDirectory);
-            if(Directory.Exists(tempDirectory)) Directory.Delete(tempDirectory, true);
-
-            foreach(var vol in Configuration.Volumes.Where(x => x.OCR))
+            List<Task> tasks = new();
+            foreach (var vol in Configuration.Volumes.Where(x => x.OCR))
             {
                 if (vol.BonusChapters.Where(x => x.OCR != null).Any(x => !File.Exists(overrideDirectory + "\\" + x.OverrideName + ".xhtml")))
                 {
                     var volname = Configuration.VolumeNames.First(x => x.InternalName.Equals(vol.InternalName));
                     var fileName = Configuration.Options_.Folder.InputFolder + "\\" + string.Format(volname.FileName, 3840);
                     if (!File.Exists(fileName))
-                        await Downloader.DownloadSpecificVolume(volname.ApiSlug, login.AccessToken, fileName, new HttpClient());
+                        await Downloader.DownloadSpecificVolume(volname.ApiSlug, login.AccessToken, fileName, client);
 
                     if (File.Exists(fileName))
                     {
+                        string tempDirectory = getTempDirectory(tempDirectoryBase, "OCR");
                         Directory.CreateDirectory(tempDirectory);
                         ZipFile.ExtractToDirectory(fileName, tempDirectory);
 
                         foreach (var chapter in vol.BonusChapters.Where(x => x.OCR != null))
                         {
-                            await DoOCR(chapter, overrideDirectory);
+                            tasks.Add(DoOCR(chapter, overrideDirectory, tempDirectory));
                         }
-                        Directory.Delete(tempDirectory, true);
                     }
                 }
             }
+            await Task.WhenAll(tasks);
+            Directory.Delete(tempDirectoryBase, true);
         }
 
         public static Color GetPixel(int x, int y, BitmapData data, Byte[] Pixels, int Bpp)
@@ -96,7 +104,7 @@ namespace AOABO.OCR
             }
         }
 
-        private static async Task DoOCR(BonusChapter chapter, string overrideDirectory)
+        private static async Task DoOCR(BonusChapter chapter, string overrideDirectory, string tempDirectory)
         {
             try
             {

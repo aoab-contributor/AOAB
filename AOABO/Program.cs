@@ -21,6 +21,7 @@ class AOABConsole
     public const string loginDescription   = "Set Login Details";
     public const string downloadDescription = "Download Updates";
     public const string ocrDescription = "OCR Manga Bonus Written Chapters";
+    public const string invalidCredentials = "Unable to validate credentials";
 
     private static string normalizeFolder(string? folderPath)
     {
@@ -105,9 +106,6 @@ class AOABConsole
             }, 
             configFileOption, inputFolder, outputFolder, omnibusPart);
 
-        var updateCommand = new Command("update", updateDescription);
-
-        
         // Login Command ///////////////////////////////////////////////////////////////////////////////////////////
         var loginCommand = new Command("login", loginDescription);
         rootCommand.AddCommand(loginCommand);
@@ -122,7 +120,7 @@ class AOABConsole
                 }
                 else 
                 {
-                    System.Console.WriteLine("Unable to validate credentials");
+                    System.Console.WriteLine(invalidCredentials);
                     returnCode = 1;
                 }
             },
@@ -156,19 +154,38 @@ class AOABConsole
                 }
                 else
                 {
-                    Console.WriteLine("No valid login credentials");
+                    Console.WriteLine(invalidCredentials);
                     returnCode = 1;
                 }
             },
             configFileOption, accountFileOption, inputFolder, outputFolder, skipUpdateFiles);
 
+        
+        // OCR command /////////////////////////////////////////////////////////////////////////////////
         var ocrCommand = new Command("ocr", ocrDescription);
-
-
-
-
-
         rootCommand.AddCommand(ocrCommand);
+        ocrCommand.SetHandler(async (config, account, input) =>
+            {
+                var login = await Login.FromFile(account, client);
+                if (login != null)
+                {
+                    Configuration.Initialize(normalizeFile(config));
+                    Configuration.SetFolders(normalizeFolder(input), null);
+                    Configuration.PersistOptions();
+                    await OCR.BuildOCROverrides(login, client);
+                }
+                else
+                {
+                    Console.WriteLine(invalidCredentials);
+                    returnCode = 1;
+                }
+            },
+            configFileOption, accountFileOption, inputFolder);
+
+
+        var updateCommand = new Command("update", updateDescription);
+        rootCommand.AddCommand(updateCommand);
+        
 
 
         await rootCommand.InvokeAsync(args);
@@ -224,7 +241,7 @@ class AOABConsole
                     await Downloader.DoDownloadsInteractive(client, login!.AccessToken, inputFolder, Configuration.VolumeNames.Select(x => new Name { ApiSlug = x.ApiSlug, FileName = x.FileName, Quality = x.Quality! }), Configuration.Options_.Image.MangaQuality);
                     break;
                 case ('5', true):
-                    await OCR.BuildOCROverrides(login!);
+                    await OCR.BuildOCROverrides(login!, client);
                     break;
 #if DEBUG
                 case ('6', true):
