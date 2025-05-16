@@ -13,13 +13,8 @@ namespace Core.Downloads
 {
     public class Downloader
     {
-        public async static Task DoDownloads(HttpClient client, string token, string inputFolder, IEnumerable<Name> names, MangaQuality mangaQuality)
+        public async static Task DoDownloads(HttpClient client, string token, string inputFolder, IEnumerable<Name> names, MangaQuality mangaQuality, Func<string, bool> skipUpdate)
         {
-            Console.Clear();
-            Console.WriteLine("Downloading Updated .epub files");
-            Console.WriteLine("Unfortunately, the j-novel.club api does not track manga updates, so manga will only be downloaded if a file is missing.");
-            Console.WriteLine();
-
             var library = await GetLibrary(client, token);
             var epubs = Directory.GetFiles(inputFolder, "*.epub");
             foreach (var fileName in names)
@@ -48,10 +43,7 @@ namespace Core.Downloads
 
                             if (!isLastDownload)
                             {
-                                Console.WriteLine($"File {fileName.FileName} may have been modified both locally and on j-novel club. Do you wish to update this file, Y/N?");
-                                var yn = Console.ReadKey();
-                                Console.WriteLine();
-                                if (yn.KeyChar.Equals('y') || yn.KeyChar.Equals('Y'))
+                                if (!skipUpdate(fileName.FileName))
                                 {
                                     await doDownload(libraryBook, fileName, client, inputFolder, mangaQuality);
                                 }
@@ -68,6 +60,23 @@ namespace Core.Downloads
                     Console.WriteLine(ex.Message);
                 }
             }
+        }
+
+
+        public async static Task DoDownloadsInteractive(HttpClient client, string token, string inputFolder, IEnumerable<Name> names, MangaQuality mangaQuality)
+        {
+            Console.Clear();
+            Console.WriteLine("Downloading Updated .epub files");
+            Console.WriteLine("Unfortunately, the j-novel.club api does not track manga updates, so manga will only be downloaded if a file is missing.");
+            Console.WriteLine();
+            Func<string, bool> querySkipUpdate = delegate (string filename)
+            {
+                Console.WriteLine($"File {filename} may have been modified both locally and on j-novel club. Do you wish to update this file, Y/N?");
+                var yn = Console.ReadKey();
+                Console.WriteLine();
+                return !(yn.KeyChar.Equals('y') || yn.KeyChar.Equals('Y'));
+            };
+            await DoDownloads(client, token, inputFolder, names, mangaQuality, querySkipUpdate);
         }
 
         public static async Task<LibraryResponse> GetLibrary(HttpClient client, string token)

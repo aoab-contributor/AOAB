@@ -103,7 +103,7 @@ namespace OBB
                     {
                         if (Login != null)
                         {
-                            await Downloader.DoDownloads(client, Login.AccessToken, inFolder, selection.Volumes.Select(x => new Name { ApiSlug = x.ApiSlug, FileName = x.FileName }), MangaQuality.FourK);
+                            await Downloader.DoDownloadsInteractive(client, Login.AccessToken, inFolder, selection.Volumes.Select(x => new Name { ApiSlug = x.ApiSlug, FileName = x.FileName }), MangaQuality.FourK);
                         }
                     }
                 }

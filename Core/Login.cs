@@ -13,13 +13,13 @@ namespace Core
             AccessToken = accessToken;
         }
 
-        public static byte[] ToCiphertext(string password)
+        private static byte[] ToCiphertext(string password)
         {
             byte[] plaintextPassword = Encoding.ASCII.GetBytes(password)!;
             return ProtectedData.Protect(plaintextPassword, null, DataProtectionScope.CurrentUser );
         }
         
-        public static string FromCiphertext(byte[] ciphertextBuffer)
+        private static string FromCiphertext(byte[] ciphertextBuffer)
         {
             byte[] plaintextBuffer = ProtectedData.Unprotect(ciphertextBuffer, null, DataProtectionScope.CurrentUser);
             return Encoding.ASCII.GetString(plaintextBuffer);
