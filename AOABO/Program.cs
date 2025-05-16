@@ -22,7 +22,7 @@ class AOABConsole
     public const string downloadDescription = "Download Updates";
     public const string ocrDescription = "OCR Manga Bonus Written Chapters";
 
-    private static string sanitizeFolder(string? folderPath)
+    private static string normalizeFolder(string? folderPath)
     {
         if (string.IsNullOrWhiteSpace(folderPath)) // if empty string, use CWD
         {
@@ -38,9 +38,9 @@ class AOABConsole
         }
     }
 
-    private static string sanitizeFile(string filePath)
+    private static string normalizeFile(string filePath)
     {
-        return Path.Join(sanitizeFolder(Path.GetDirectoryName(filePath)), Path.GetFileName(filePath));
+        return Path.Join(normalizeFolder(Path.GetDirectoryName(filePath)), Path.GetFileName(filePath));
     }
 
     static async Task<int> Main(string[] args)
@@ -72,7 +72,7 @@ class AOABConsole
         // default behavior if no argument provided //////////////////////////////////////////////////////////////
         rootCommand.SetHandler(async (config, account) =>
             {
-                await RunInteractive(sanitizeFile(config), sanitizeFile(account), client);
+                await RunInteractive(normalizeFile(config), normalizeFile(account), client);
             },
             configFileOption, accountFileOption);
 
@@ -82,7 +82,7 @@ class AOABConsole
         rootCommand.AddCommand(interactiveCommand);
         interactiveCommand.SetHandler(async (config, account) =>
             {
-                await RunInteractive(sanitizeFile(config), sanitizeFile(account), client);
+                await RunInteractive(normalizeFile(config), normalizeFile(account), client);
             },
             configFileOption, accountFileOption);
 
@@ -98,8 +98,8 @@ class AOABConsole
         rootCommand.AddCommand(createCommand);
         createCommand.SetHandler(async (config, input, output, part) =>      
             {
-                Configuration.Initialize(sanitizeFile(config));
-                Configuration.SetFolders(sanitizeFolder(input), sanitizeFolder(output));
+                Configuration.Initialize(normalizeFile(config));
+                Configuration.SetFolders(normalizeFolder(input), normalizeFolder(output));
                 Configuration.PersistOptions();
                 await OmnibusBuilder.BuildOmnibus(Convert.ToString(part)[0]);
             }, 
@@ -118,7 +118,7 @@ class AOABConsole
                 var login = await Login.CreateLogin(username, password, client);
                 if (login != null)
                 {
-                    await Login.PersistLoginInfo(sanitizeFile(account), username, password);
+                    await Login.PersistLoginInfo(normalizeFile(account), username, password);
                 }
                 else 
                 {
@@ -143,8 +143,8 @@ class AOABConsole
                 var login = await Login.FromFile(account, client);
                 if (login != null)
                 {
-                    Configuration.Initialize(sanitizeFile(config));
-                    Configuration.SetFolders(sanitizeFolder(input), sanitizeFolder(output));
+                    Configuration.Initialize(normalizeFile(config));
+                    Configuration.SetFolders(normalizeFolder(input), normalizeFolder(output));
                     Configuration.PersistOptions();
                     await Downloader.DoDownloads(client, 
                                                  login.AccessToken,
@@ -220,7 +220,7 @@ class AOABConsole
                     login = await Login.FromConsole(accountFile, client);
                     break;
                 case ('4', true):
-                    var inputFolder = sanitizeFolder(Configuration.Options_.Folder.InputFolder);
+                    var inputFolder = normalizeFolder(Configuration.Options_.Folder.InputFolder);
                     await Downloader.DoDownloadsInteractive(client, login!.AccessToken, inputFolder, Configuration.VolumeNames.Select(x => new Name { ApiSlug = x.ApiSlug, FileName = x.FileName, Quality = x.Quality! }), Configuration.Options_.Image.MangaQuality);
                     break;
                 case ('5', true):
