@@ -19,11 +19,34 @@ class AOABConsole
     public const string createDescription = "Create an Ascendance of a Bookworm Omnibus";
     public const string updateDescription = "Update Omnibus Creation Settings";
     public const string loginDescription   = "Set Login Details";
-    public const string downloadDescriptDownload = "Download Updates";
+    public const string downloadDescription = "Download Updates";
     public const string ocrDescription = "OCR Manga Bonus Written Chapters";
 
-    static async Task Main(string[] args)
+    private static string sanitizeFolder(string? folderPath)
     {
+        if (string.IsNullOrWhiteSpace(folderPath)) // if empty string, use CWD
+        {
+            return Directory.GetCurrentDirectory();
+        }
+        else if (folderPath.Length > 1 && folderPath[1].Equals(':')) // if starts with drive letter, assume it is an absolute path
+        {
+            return folderPath;
+        }
+        else
+        {
+            return Path.Join(Directory.GetCurrentDirectory(), folderPath);
+        }
+    }
+
+    private static string sanitizeFile(string filePath)
+    {
+        return Path.Join(sanitizeFolder(Path.GetDirectoryName(filePath)), Path.GetFileName(filePath));
+    }
+
+    static async Task<int> Main(string[] args)
+    {
+        int returnCode = 0;
+        HttpClient client = new HttpClient();
         var rootCommand = new RootCommand("Ascendance of a Bookworm Omnibus Creator");
 
 
@@ -49,7 +72,7 @@ class AOABConsole
         // default behavior if no argument provided //////////////////////////////////////////////////////////////
         rootCommand.SetHandler(async (config, account) =>
             {
-                await RunInteractive(config, account);
+                await RunInteractive(sanitizeFile(config), sanitizeFile(account), client);
             },
             configFileOption, accountFileOption);
 
@@ -59,7 +82,7 @@ class AOABConsole
         rootCommand.AddCommand(interactiveCommand);
         interactiveCommand.SetHandler(async (config, account) =>
             {
-                await RunInteractive(config, account);
+                await RunInteractive(sanitizeFile(config), sanitizeFile(account), client);
             },
             configFileOption, accountFileOption);
 
@@ -75,10 +98,10 @@ class AOABConsole
         rootCommand.AddCommand(createCommand);
         createCommand.SetHandler(async (config, input, output, part) =>      
             {
-                Configuration.Initialize(config);
-                Configuration.SetFolders(input, output);
-                await OmnibusBuilder.BuildOmnibus(Convert.ToString(part)[0]);
+                Configuration.Initialize(sanitizeFile(config));
+                Configuration.SetFolders(sanitizeFolder(input), sanitizeFolder(output));
                 Configuration.PersistOptions();
+                await OmnibusBuilder.BuildOmnibus(Convert.ToString(part)[0]);
             }, 
             configFileOption, inputFolder, outputFolder, omnibusPart);
 
@@ -87,38 +110,75 @@ class AOABConsole
         
         // Login Command ///////////////////////////////////////////////////////////////////////////////////////////
         var loginCommand = new Command("login", loginDescription);
+        rootCommand.AddCommand(loginCommand);
         loginCommand.SetHandler(async (account) =>
             {
-                HttpClient client = new HttpClient();
                 string username = Login.ConsoleGetUsername();
                 string password = Login.ConsoleGetPassword();
                 var login = await Login.CreateLogin(username, password, client);
                 if (login != null)
                 {
-                    await Login.PersistLoginInfo(account, username, password);
+                    await Login.PersistLoginInfo(sanitizeFile(account), username, password);
+                }
+                else 
+                {
+                    System.Console.WriteLine("Unable to validate credentials");
+                    returnCode = 1;
                 }
             },
             accountFileOption);
 
-        var downloadCommand = new Command("download", updateDescription);
+
+        // Download Command ////////////////////////////////////////////////////////////////////////////////////////
+        var skipUpdateFiles = new Option<bool>(name: "--no-update",
+                                               description: "Do not download books updated books",
+                                               getDefaultValue: () => false);
+        var downloadCommand = new Command("download", downloadDescription)
+        {
+            skipUpdateFiles
+        };
+        rootCommand.AddCommand(downloadCommand);
+        downloadCommand.SetHandler(async (config, account, input, output, skipUpdate) =>
+            {
+                var login = await Login.FromFile(account, client);
+                if (login != null)
+                {
+                    Configuration.Initialize(sanitizeFile(config));
+                    Configuration.SetFolders(sanitizeFolder(input), sanitizeFolder(output));
+                    Configuration.PersistOptions();
+                    await Downloader.DoDownloads(client, 
+                                                 login.AccessToken,
+                                                 Configuration.Options_.Folder.InputFolder, 
+                                                 Configuration.VolumeNames.Select(x => new Name { ApiSlug = x.ApiSlug, FileName = x.FileName, Quality = x.Quality! }),
+                                                 Configuration.Options_.Image.MangaQuality,
+                                                 (string _) => skipUpdate);
+
+                }
+                else
+                {
+                    Console.WriteLine("No valid login credentials");
+                    returnCode = 1;
+                }
+            },
+            configFileOption, accountFileOption, inputFolder, outputFolder, skipUpdateFiles);
 
         var ocrCommand = new Command("ocr", ocrDescription);
 
 
 
 
-        
-        rootCommand.AddCommand(loginCommand);
+
         rootCommand.AddCommand(ocrCommand);
 
 
         await rootCommand.InvokeAsync(args);
+
+        return returnCode;
     }
 
-    public static async Task RunInteractive(string configFile, string accountFile)
+    public static async Task RunInteractive(string configFile, string accountFile, HttpClient client)
     {
         var executing = true;
-        HttpClient client = new HttpClient();
 
         Configuration.Initialize(configFile);
         var login = await Login.FromFile(accountFile, client);
@@ -133,7 +193,7 @@ class AOABConsole
 
             if (login != null)
             {
-                Console.WriteLine($"4 - {updateDescription}");
+                Console.WriteLine($"4 - {downloadDescription}");
                 Console.WriteLine($"5 - {ocrDescription}");
             }
 
@@ -160,9 +220,8 @@ class AOABConsole
                     login = await Login.FromConsole(accountFile, client);
                     break;
                 case ('4', true):
-                    var inputFolder = string.IsNullOrWhiteSpace(Configuration.Options_.Folder.InputFolder) ? Directory.GetCurrentDirectory() :
-                        Configuration.Options_.Folder.InputFolder.Length > 1 && Configuration.Options_.Folder.InputFolder[1].Equals(':') ? Configuration.Options_.Folder.InputFolder : Directory.GetCurrentDirectory() + "\\" + Configuration.Options_.Folder.InputFolder;
-                    await Downloader.DoDownloads(client, login!.AccessToken, inputFolder, Configuration.VolumeNames.Select(x => new Name { ApiSlug = x.ApiSlug, FileName = x.FileName, Quality = x.Quality! }), Configuration.Options_.Image.MangaQuality);
+                    var inputFolder = sanitizeFolder(Configuration.Options_.Folder.InputFolder);
+                    await Downloader.DoDownloadsInteractive(client, login!.AccessToken, inputFolder, Configuration.VolumeNames.Select(x => new Name { ApiSlug = x.ApiSlug, FileName = x.FileName, Quality = x.Quality! }), Configuration.Options_.Image.MangaQuality);
                     break;
                 case ('5', true):
                     await OCR.BuildOCROverrides(login!);
