@@ -102,7 +102,7 @@ namespace OBB_WPF.Editor
                     order++;
                 }
                 var manifestLine = content.Manifest.First(x => x.Id.Equals(line.Id));
-                currentChapter.Sources.Add(new Source { File = $"{contentFolder}\\{manifestLine.Href}", SortOrder = $"{volOrder:000}{order:00}{sourceOrder:000}" });
+                currentChapter.Sources.Add(new Source { File = $"{contentFolder}\\{manifestLine.Href.Replace("/", "\\")}", SortOrder = $"{volOrder:000}{order:00}{sourceOrder:000}" });
                 sourceOrder++;
             }
 
