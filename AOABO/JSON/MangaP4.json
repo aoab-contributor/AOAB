@@ -294,7 +294,30 @@
     "ProcessedInFanbooks": true,
     "ProcessedInHannelore": true,
     "OCR": true,
-    "Chapters": [],
+    "Chapters": [
+      {
+        "OriginalFilenames": [
+          "160",
+          "161"
+        ],
+        "ChapterName": "Royal Academy Professors",
+        "SortOrder": "Char03",
+        "Year": 6,
+        "Season": "Winter",
+        "Volume": "Char",
+        "Set": "",
+        "Priority": 0,
+        "ProcessedInPartOne": false,
+        "ProcessedInPartTwo": false,
+        "ProcessedInPartThree": false,
+        "ProcessedInPartFour": true,
+        "ProcessedInPartFive": true,
+        "ProcessedInFanbooks": true,
+        "ProcessedInHannelore": true,
+        "StartLine": null,
+        "EndLine": null
+      }
+    ],
     "POVChapters": [],
     "MangaChapters": [
       {
@@ -425,38 +448,6 @@
         "ProcessedInHannelore": false,
         "StartLine": null,
         "EndLine": null
-      },
-      {
-        "OCR": null,
-        "OverrideName": "Royal Academy Professors",
-        "POV": "",
-        "Source": "",
-        "EarlySortOrder": "Char03",
-        "LateSortOrder": "Char9602",
-        "EarlyYear": 6,
-        "LateYear": 6,
-        "EarlySeason": "Winter",
-        "LateSeason": "Winter",
-        "OriginalFilenames": [
-          "160",
-          "161"
-        ],
-        "ChapterName": "Royal Academy Professors",
-        "SortOrder": "",
-        "Year": 0,
-        "Season": "",
-        "Volume": "Char",
-        "Set": "",
-        "Priority": 0,
-        "ProcessedInPartOne": false,
-        "ProcessedInPartTwo": false,
-        "ProcessedInPartThree": false,
-        "ProcessedInPartFour": true,
-        "ProcessedInPartFive": true,
-        "ProcessedInFanbooks": true,
-        "ProcessedInHannelore": true,
-        "StartLine": null,
-        "EndLine": null
       }
     ],
     "ComfyLifeChapter": null,
@@ -476,7 +467,30 @@
     "ProcessedInFanbooks": true,
     "ProcessedInHannelore": true,
     "OCR": true,
-    "Chapters": [],
+    "Chapters": [
+      {
+        "OriginalFilenames": [
+          "176",
+          "177"
+        ],
+        "ChapterName": "Other Archduke Candidates",
+        "SortOrder": "Char04",
+        "Year": 6,
+        "Season": "Winter",
+        "Volume": "Char",
+        "Set": "",
+        "Priority": 0,
+        "ProcessedInPartOne": false,
+        "ProcessedInPartTwo": false,
+        "ProcessedInPartThree": false,
+        "ProcessedInPartFour": true,
+        "ProcessedInPartFive": true,
+        "ProcessedInFanbooks": true,
+        "ProcessedInHannelore": true,
+        "StartLine": null,
+        "EndLine": null
+      }
+    ],
     "POVChapters": [],
     "MangaChapters": [],
     "BonusChapters": [
@@ -588,38 +602,6 @@
         "ProcessedInPartFive": false,
         "ProcessedInFanbooks": false,
         "ProcessedInHannelore": false,
-        "StartLine": null,
-        "EndLine": null
-      },
-      {
-        "OCR": null,
-        "OverrideName": "Other Archduke Candidates",
-        "POV": "",
-        "Source": "",
-        "EarlySortOrder": "Char04",
-        "LateSortOrder": "Char9603",
-        "EarlyYear": 6,
-        "LateYear": 6,
-        "EarlySeason": "Winter",
-        "LateSeason": "Winter",
-        "OriginalFilenames": [
-          "176",
-          "177"
-        ],
-        "ChapterName": "Other Archduke Candidates",
-        "SortOrder": "",
-        "Year": 0,
-        "Season": "",
-        "Volume": "Char",
-        "Set": "",
-        "Priority": 0,
-        "ProcessedInPartOne": false,
-        "ProcessedInPartTwo": false,
-        "ProcessedInPartThree": false,
-        "ProcessedInPartFour": true,
-        "ProcessedInPartFive": true,
-        "ProcessedInFanbooks": true,
-        "ProcessedInHannelore": true,
         "StartLine": null,
         "EndLine": null
       }

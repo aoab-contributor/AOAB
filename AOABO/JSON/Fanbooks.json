@@ -721,6 +721,27 @@
       },
       {
         "OriginalFilenames": [
+          "45"
+        ],
+        "ChapterName": "Yurgenschmidt's Duchies",
+        "SortOrder": "Char02",
+        "Year": 6,
+        "Season": "Winter",
+        "Volume": "Char", 
+        "Set": "",
+        "Priority": 0,
+        "ProcessedInPartOne": false,
+        "ProcessedInPartTwo": false,
+        "ProcessedInPartThree": false,
+        "ProcessedInPartFour": true,
+        "ProcessedInPartFive": true,
+        "ProcessedInFanbooks": true,
+        "ProcessedInHannelore": true,
+        "StartLine": null,
+        "EndLine": null
+      },
+      {
+        "OriginalFilenames": [
           "qa"
         ],
         "ChapterName": "Fanbook Three Q&amp;A",
@@ -809,37 +830,6 @@
         "ProcessedInPartFive": false,
         "ProcessedInFanbooks": false,
         "ProcessedInHannelore": false,
-        "StartLine": null,
-        "EndLine": null
-      },
-      {
-        "OCR": null,
-        "OverrideName": "",
-        "POV": "",
-        "Source": "",
-        "EarlySortOrder": "Char02",
-        "LateSortOrder": "Char9601",
-        "EarlyYear": 6,
-        "LateYear": 6,
-        "EarlySeason": "Winter",
-        "LateSeason": "Winter",
-        "OriginalFilenames": [
-          "45"
-        ],
-        "ChapterName": "Yurgenschmidt's Duchies",
-        "SortOrder": "",
-        "Year": 0,
-        "Season": "",
-        "Volume": "Char",
-        "Set": "",
-        "Priority": 0,
-        "ProcessedInPartOne": false,
-        "ProcessedInPartTwo": false,
-        "ProcessedInPartThree": false,
-        "ProcessedInPartFour": true,
-        "ProcessedInPartFive": true,
-        "ProcessedInFanbooks": true,
-        "ProcessedInHannelore": true,
         "StartLine": null,
         "EndLine": null
       }
