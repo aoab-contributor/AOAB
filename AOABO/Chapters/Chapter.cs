@@ -43,7 +43,9 @@ namespace AOABO.Chapters
                 "0401" or "0402" or "0403" or "0404" or "0405" or "0406" or "0407" or "0408" or "0409" => $"{Configuration.FolderNames["PartFour"]}\\03-Story",
                 "0501" or "0502" or "0503" or "0504" or "0505" or "0506" or "0507" or "0508" or "0509" or "0510" or "0511" or "0512" => $"{Configuration.FolderNames["PartFive"]}\\03-Story",
                 "0601" => $"{Configuration.FolderNames["Hannelore"]}\\03-Story",
-                "FB1" or "FB2" or "FB3" or "FB4" or "FB5" => $"11-Fanbooks",
+                "Char" => "11-Characters",
+                "FB1" or "FB2" or "FB3" or "FB4" or "FB5" or "FB6" => $"12-Fanbooks",
+                "Drama" => "13-Drama CDs",
                 _ => throw new Exception($"GetPartSubFolder - {ChapterName}"),
             };
         }
@@ -58,7 +60,9 @@ namespace AOABO.Chapters
                 "0501" or "0502" or "0503" or "0504" or "0505" or "0506" or "0507" or "0508" or "0509" => $"P5V{Volume[3]}",
                 "0510" or "0511" or "0512" => $"P5V{Volume[2]}{Volume[3]}",
                 "0601" => $"H5V{Volume[3]}",
-                "FB1" or "FB2" or "FB3" or "FB4" or "FB5" => $"11-Fanbooks",
+                "Char" => "11-Characters",
+                "FB1" or "FB2" or "FB3" or "FB4" or "FB5" or "FB6" => $"12-Fanbooks",
+                "Drama" => "13-Drama CDs",
                 _ => throw new Exception($"GetPartSubFolder - {ChapterName}"),
             };
         }
@@ -66,7 +70,9 @@ namespace AOABO.Chapters
         {
             return Volume switch
             {
-                "FB1" or "FB2" or "FB3" or "FB4" or "FB5" => $"06-Fanbooks",
+                "Char" => "06-Characters",
+                "FB1" or "FB2" or "FB3" or "FB4" or "FB5" or "FB6" => $"07-Fanbooks",
+                "Drama" => "08-Drama CDs",
                 _ => $"03-Story\\[Year]\\{GetSeason()}"
             };
         }
@@ -81,7 +87,9 @@ namespace AOABO.Chapters
                 "0401" or "0402" or "0403" or "0404" or "0405" or "0406" or "0407" or "0408" or "0409" => $"{Configuration.FolderNames["PartFour"]}\\{Volume}-{getVolumeName()}",
                 "0501" or "0502" or "0503" or "0504" or "0505" or "0506" or "0507" or "0508" or "0509" or "0510" or "0511" or "0512" => $"{Configuration.FolderNames["PartFive"]}\\{Volume}-{getVolumeName()}",
                 "0601" => $"{Configuration.FolderNames["Hannelore"]}\\{Volume}-{getVolumeName()}",
-                "FB1" or "FB2" or "FB3" or "FB4" or "FB5" => $"08-Fanbooks",
+                "Char" => "08-Characters",
+                "FB1" or "FB2" or "FB3" or "FB4" or "FB5" or "FB6" => $"09-Fanbooks",
+                "Drama" => "10-Drama CDs",
                 _ => throw new Exception($"GetVolumeSubFolder - {ChapterName}")
             };
         }
@@ -110,7 +118,9 @@ namespace AOABO.Chapters
         {
             return Volume switch
             {
-                "FB1" or "FB2" or "FB3" or "FB4" or "FB5" => $"06-Fanbooks",
+                "Char" => "06-Characters",
+                "FB1" or "FB2" or "FB3" or "FB4" or "FB5" or "FB6" => $"07-Fanbooks",
+                "Drama" => "08-Drama CDs",
                 _ => $"03-Story"
             };
         }
