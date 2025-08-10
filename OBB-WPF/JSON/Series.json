@@ -10171,7 +10171,9 @@
         "ApiSlug": "i-refuse-to-be-your-enemy",
         "FileName": "i-refuse-to-be-your-enemy.epub",
         "Title": "I Refuse to Be Your Enemy! Volume 1",
-        "EditedBy": [],
+        "EditedBy": [
+          "kuali"
+        ],
         "Published": "2020-02-22",
         "Order": 101
       },
@@ -10179,7 +10181,9 @@
         "ApiSlug": "i-refuse-to-be-your-enemy-volume-2",
         "FileName": "i-refuse-to-be-your-enemy-volume-2.epub",
         "Title": "I Refuse to Be Your Enemy! Volume 2",
-        "EditedBy": [],
+        "EditedBy": [
+          "kuali"
+        ],
         "Published": "2020-07-11",
         "Order": 102
       },
@@ -10187,7 +10191,9 @@
         "ApiSlug": "i-refuse-to-be-your-enemy-volume-3",
         "FileName": "i-refuse-to-be-your-enemy-volume-3.epub",
         "Title": "I Refuse to Be Your Enemy! Volume 3",
-        "EditedBy": [],
+        "EditedBy": [
+          "kuali"
+        ],
         "Published": "2020-09-23",
         "Order": 103
       },
@@ -10195,7 +10201,9 @@
         "ApiSlug": "i-refuse-to-be-your-enemy-volume-4",
         "FileName": "i-refuse-to-be-your-enemy-volume-4.epub",
         "Title": "I Refuse to Be Your Enemy! Volume 4",
-        "EditedBy": [],
+        "EditedBy": [
+          "kuali"
+        ],
         "Published": "2020-12-16",
         "Order": 104
       },
@@ -10203,7 +10211,9 @@
         "ApiSlug": "i-refuse-to-be-your-enemy-volume-5",
         "FileName": "i-refuse-to-be-your-enemy-volume-5.epub",
         "Title": "I Refuse to Be Your Enemy! Volume 5",
-        "EditedBy": [],
+        "EditedBy": [
+          "kuali"
+        ],
         "Published": "2021-03-27",
         "Order": 105
       },
@@ -10211,7 +10221,9 @@
         "ApiSlug": "i-refuse-to-be-your-enemy-volume-6",
         "FileName": "i-refuse-to-be-your-enemy-volume-6.epub",
         "Title": "I Refuse to Be Your Enemy! Volume 6",
-        "EditedBy": [],
+        "EditedBy": [
+          "kuali"
+        ],
         "Published": "2021-06-11",
         "Order": 106
       }

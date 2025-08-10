@@ -1,0 +1,2169 @@
+{
+  "Cover": {
+    "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy\\OEBPS\\Text\\cover.xhtml",
+    "Alternates": [],
+    "OtherSide": null,
+    "SortOrder": "10102001"
+  },
+  "Author": "Kanata Satsuki",
+  "AuthorSort": "SATSUKI, KANATA",
+  "Name": "I Refuse to Be Your Enemy!",
+  "InternalName": "i-refuse-to-be-your-enemy",
+  "UnusedSources": [
+    {
+      "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-2\\OEBPS\\Text\\bonus.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10212025"
+    },
+    {
+      "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-2\\OEBPS\\Text\\copyright.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10214027"
+    },
+    {
+      "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-2\\OEBPS\\Text\\signup.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10213026"
+    },
+    {
+      "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-2\\OEBPS\\Text\\toc.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10203004"
+    },
+    {
+      "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-3\\OEBPS\\Text\\copyright.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10318034"
+    },
+    {
+      "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-3\\OEBPS\\Text\\cover.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10302001"
+    },
+    {
+      "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-3\\OEBPS\\Text\\signup.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10317033"
+    },
+    {
+      "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-3\\OEBPS\\Text\\toc.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10303005"
+    },
+    {
+      "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-4\\OEBPS\\Text\\bonus.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10414031"
+    },
+    {
+      "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-4\\OEBPS\\Text\\copyright.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10417034"
+    },
+    {
+      "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-4\\OEBPS\\Text\\cover.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10402001"
+    },
+    {
+      "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-4\\OEBPS\\Text\\signup.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10416033"
+    },
+    {
+      "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-4\\OEBPS\\Text\\toc.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10403006"
+    },
+    {
+      "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-5\\OEBPS\\Text\\bonus.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10518035"
+    },
+    {
+      "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-5\\OEBPS\\Text\\copyright.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10520037"
+    },
+    {
+      "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-5\\OEBPS\\Text\\signup.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10519036"
+    },
+    {
+      "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-5\\OEBPS\\Text\\toc.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10503006"
+    },
+    {
+      "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-6\\OEBPS\\Text\\bonus.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10616032"
+    },
+    {
+      "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-6\\OEBPS\\Text\\copyright.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10618034"
+    },
+    {
+      "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-6\\OEBPS\\Text\\signup.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10617033"
+    },
+    {
+      "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-6\\OEBPS\\Text\\toc.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10603006"
+    },
+    {
+      "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy\\OEBPS\\Text\\copyright.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10113029"
+    },
+    {
+      "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy\\OEBPS\\Text\\frontmatter1.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10103002"
+    },
+    {
+      "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy\\OEBPS\\Text\\signup.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10112028"
+    },
+    {
+      "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy\\OEBPS\\Text\\toc.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10103004"
+    }
+  ],
+  "Chapters": [
+    {
+      "CType": 0,
+      "ChapType": "Story",
+      "Name": "Volume 1",
+      "SortOrder": "101",
+      "Sources": [
+        {
+          "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy\\OEBPS\\Text\\frontmatter2.xhtml",
+          "Alternates": [],
+          "OtherSide": null,
+          "SortOrder": "10103003"
+        },
+        {
+          "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy\\OEBPS\\Text\\bonus1.xhtml",
+          "Alternates": [],
+          "OtherSide": null,
+          "SortOrder": "10111026"
+        },
+        {
+          "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy\\OEBPS\\Text\\bonus2.xhtml",
+          "Alternates": [],
+          "OtherSide": null,
+          "SortOrder": "10111027"
+        }
+      ],
+      "LinkedChapters": [],
+      "EndsBeforeLine": "",
+      "StartsAtLine": "",
+      "SubSections": [],
+      "Chapters": [
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "Prologue",
+          "SortOrder": "10103",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy\\OEBPS\\Text\\prologue.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10104005"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "I’m Getting Out Of Here!",
+          "SortOrder": "10104",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy\\OEBPS\\Text\\chapter1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10105006"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy\\OEBPS\\Text\\insert1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10105007"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy\\OEBPS\\Text\\chapter1_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10105008"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy\\OEBPS\\Text\\insert2.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10105009"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy\\OEBPS\\Text\\chapter1_2.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10105010"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "The Path to Sorcery",
+          "SortOrder": "10105",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy\\OEBPS\\Text\\chapter2.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10106011"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy\\OEBPS\\Text\\insert3.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10106012"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy\\OEBPS\\Text\\chapter2_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10106013"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "Struck Too Soon",
+          "SortOrder": "10106",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy\\OEBPS\\Text\\chapter3.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10107014"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy\\OEBPS\\Text\\insert4.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10107015"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy\\OEBPS\\Text\\chapter3_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10107016"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "The Toll of Fate’s Bell",
+          "SortOrder": "10107",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy\\OEBPS\\Text\\chapter4.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10108017"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy\\OEBPS\\Text\\insert5.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10108018"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy\\OEBPS\\Text\\chapter4_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10108019"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy\\OEBPS\\Text\\insert6.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10108020"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy\\OEBPS\\Text\\chapter4_2.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10108021"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 1,
+          "ChapType": "Bonus",
+          "Name": "The Midnight Lesson",
+          "SortOrder": "10108",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy\\OEBPS\\Text\\sidestory.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10109022"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy\\OEBPS\\Text\\insert7.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10109023"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy\\OEBPS\\Text\\sidestory_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10109024"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        }
+      ]
+    },
+    {
+      "CType": 0,
+      "ChapType": "Story",
+      "Name": "Volume 2",
+      "SortOrder": "102",
+      "Sources": [
+        {
+          "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-2\\OEBPS\\Text\\cover.xhtml",
+          "Alternates": [],
+          "OtherSide": null,
+          "SortOrder": "10202001"
+        },
+        {
+          "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-2\\OEBPS\\Text\\frontmatter1.xhtml",
+          "Alternates": [],
+          "OtherSide": null,
+          "SortOrder": "10203002"
+        },
+        {
+          "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-2\\OEBPS\\Text\\frontmatter2.xhtml",
+          "Alternates": [],
+          "OtherSide": null,
+          "SortOrder": "10203003"
+        }
+      ],
+      "LinkedChapters": [],
+      "EndsBeforeLine": "",
+      "StartsAtLine": "",
+      "SubSections": [],
+      "Chapters": [
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "Counterattack on the Hills of Dilhorne",
+          "SortOrder": "10203",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-2\\OEBPS\\Text\\chapter1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10204005"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-2\\OEBPS\\Text\\insert1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10204006"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-2\\OEBPS\\Text\\chapter1_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10204007"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-2\\OEBPS\\Text\\insert2.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10204008"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-2\\OEBPS\\Text\\chapter1_2.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10204009"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 1,
+          "ChapType": "Bonus",
+          "Name": "Her Bloodstained Hand [Mabel and Queen Marianne]",
+          "SortOrder": "10204",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-2\\OEBPS\\Text\\interlude1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10205010"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-2\\OEBPS\\Text\\insert3.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10205011"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "Fate Closes In",
+          "SortOrder": "10205",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-2\\OEBPS\\Text\\chapter2.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10206012"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-2\\OEBPS\\Text\\insert4.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10206013"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-2\\OEBPS\\Text\\chapter2_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10206014"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "Departure from Évrard",
+          "SortOrder": "10206",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-2\\OEBPS\\Text\\chapter3.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10207015"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-2\\OEBPS\\Text\\insert5.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10207016"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-2\\OEBPS\\Text\\chapter3_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10207017"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "The Battle of Fort Clonfert",
+          "SortOrder": "10207",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-2\\OEBPS\\Text\\chapter4.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10208018"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-2\\OEBPS\\Text\\insert6.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10208019"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "Mercenaries in Maynard City",
+          "SortOrder": "10208",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-2\\OEBPS\\Text\\chapter5.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10209020"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 1,
+          "ChapType": "Bonus",
+          "Name": "Dreaming Under the Sunbeams",
+          "SortOrder": "10209",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-2\\OEBPS\\Text\\sidestory.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10210021"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-2\\OEBPS\\Text\\insert7.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10210022"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-2\\OEBPS\\Text\\sidestory_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10210023"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 1,
+          "ChapType": "Bonus",
+          "Name": "Maya’s Close Encounter of the Doll Kind",
+          "SortOrder": "1021101",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-2\\OEBPS\\Text\\bonus.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10212025"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "<h2>Maya’s Close Encounter of the Doll Kind</h2>",
+          "SubSections": [],
+          "Chapters": []
+        }
+      ]
+    },
+    {
+      "CType": 0,
+      "ChapType": "Story",
+      "Name": "Volume 3",
+      "SortOrder": "103",
+      "Sources": [
+        {
+          "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-3\\OEBPS\\Text\\bonus1.xhtml",
+          "Alternates": [],
+          "OtherSide": null,
+          "SortOrder": "10302001"
+        },
+        {
+          "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-3\\OEBPS\\Text\\frontmatter1.xhtml",
+          "Alternates": [],
+          "OtherSide": null,
+          "SortOrder": "10303002"
+        },
+        {
+          "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-3\\OEBPS\\Text\\frontmatter2.xhtml",
+          "Alternates": [],
+          "OtherSide": null,
+          "SortOrder": "10303003"
+        },
+        {
+          "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-3\\OEBPS\\Text\\frontmatter3.xhtml",
+          "Alternates": [],
+          "OtherSide": null,
+          "SortOrder": "10303004"
+        }
+      ],
+      "LinkedChapters": [],
+      "EndsBeforeLine": "",
+      "StartsAtLine": "",
+      "SubSections": [],
+      "Chapters": [
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "The Battle of Cassia Castle",
+          "SortOrder": "10303",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-3\\OEBPS\\Text\\chapter1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10304006"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-3\\OEBPS\\Text\\insert1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10304007"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-3\\OEBPS\\Text\\chapter1_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10304008"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "The Siege of Sorwen",
+          "SortOrder": "10304",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-3\\OEBPS\\Text\\chapter2.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10305009"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-3\\OEBPS\\Text\\insert2.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10305010"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-3\\OEBPS\\Text\\chapter2_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10305011"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 1,
+          "ChapType": "Bonus",
+          "Name": "Destiny’s Turning Point [Ada]",
+          "SortOrder": "10305",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-3\\OEBPS\\Text\\interlude1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10306012"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-3\\OEBPS\\Text\\insert3.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10306013"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-3\\OEBPS\\Text\\interlude1_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10306014"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "A Midsummer Cake and the Beginnings of Autumn",
+          "SortOrder": "10306",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-3\\OEBPS\\Text\\chapter3.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10307015"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 1,
+          "ChapType": "Bonus",
+          "Name": "The Fall of the Royal Capital [Ada]",
+          "SortOrder": "10307",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-3\\OEBPS\\Text\\interlude2.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10308016"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "Battle on the Delphion Border",
+          "SortOrder": "10308",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-3\\OEBPS\\Text\\chapter4.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10309017"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-3\\OEBPS\\Text\\insert4.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10309018"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-3\\OEBPS\\Text\\chapter4_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10309019"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "Welcome to Delphion",
+          "SortOrder": "10309",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-3\\OEBPS\\Text\\chapter5.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10310020"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-3\\OEBPS\\Text\\insert5.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10310021"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-3\\OEBPS\\Text\\chapter5_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10310022"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 1,
+          "ChapType": "Bonus",
+          "Name": "The Farzian Spellcaster [Isaac]",
+          "SortOrder": "10310",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-3\\OEBPS\\Text\\interlude3.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10311023"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "The Fort Inion Rescue Mission",
+          "SortOrder": "10311",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-3\\OEBPS\\Text\\chapter6.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10312024"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-3\\OEBPS\\Text\\insert6.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10312025"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-3\\OEBPS\\Text\\chapter6_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10312026"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 1,
+          "ChapType": "Bonus",
+          "Name": "The Spellcaster’s Side Hustle",
+          "SortOrder": "10312",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-3\\OEBPS\\Text\\side1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10313027"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-3\\OEBPS\\Text\\insert7.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10313028"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-3\\OEBPS\\Text\\side1_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10313029"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 1,
+          "ChapType": "Bonus",
+          "Name": "Reginald and Gina [Gina]",
+          "SortOrder": "10314",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-3\\OEBPS\\Text\\bonus.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10315031"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        }
+      ]
+    },
+    {
+      "CType": 0,
+      "ChapType": "Story",
+      "Name": "Volume 4",
+      "SortOrder": "104",
+      "Sources": [
+        {
+          "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-4\\OEBPS\\Text\\bonus1.xhtml",
+          "Alternates": [],
+          "OtherSide": null,
+          "SortOrder": "10403001"
+        },
+        {
+          "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-4\\OEBPS\\Text\\frontmatter1.xhtml",
+          "Alternates": [],
+          "OtherSide": null,
+          "SortOrder": "10403002"
+        },
+        {
+          "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-4\\OEBPS\\Text\\frontmatter2.xhtml",
+          "Alternates": [],
+          "OtherSide": {
+            "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-4\\OEBPS\\Text\\frontmatter3.xhtml",
+            "Alternates": [],
+            "OtherSide": null,
+            "SortOrder": "10403004"
+          },
+          "SortOrder": "10403003"
+        },
+        {
+          "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-4\\OEBPS\\Text\\frontmatter4.xhtml",
+          "Alternates": [],
+          "OtherSide": null,
+          "SortOrder": "10403005"
+        }
+      ],
+      "LinkedChapters": [],
+      "EndsBeforeLine": "",
+      "StartsAtLine": "",
+      "SubSections": [],
+      "Chapters": [
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "A Formal Introduction and a Reunion with an Oddball",
+          "SortOrder": "10403",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-4\\OEBPS\\Text\\chapter1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10404007"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-4\\OEBPS\\Text\\insert1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10404008"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-4\\OEBPS\\Text\\chapter1_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10404009"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 1,
+          "ChapType": "Bonus",
+          "Name": "Her First Impression [Ada]",
+          "SortOrder": "10404",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-4\\OEBPS\\Text\\interlude1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10405010"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "Battle on the Alesia River",
+          "SortOrder": "10405",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-4\\OEBPS\\Text\\chapter2.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10406011"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-4\\OEBPS\\Text\\insert2.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10406012"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-4\\OEBPS\\Text\\chapter2_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10406013"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 1,
+          "ChapType": "Bonus",
+          "Name": "What Was Touched by Flame [Ada]",
+          "SortOrder": "10406",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-4\\OEBPS\\Text\\interlude2.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10407014"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "The Delphion Festival",
+          "SortOrder": "10407",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-4\\OEBPS\\Text\\chapter3.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10408015"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-4\\OEBPS\\Text\\insert3.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10408016"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-4\\OEBPS\\Text\\chapter3_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10408017"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 1,
+          "ChapType": "Bonus",
+          "Name": "The Scars of the Festival [Ada]",
+          "SortOrder": "10408",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-4\\OEBPS\\Text\\interlude3.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10409018"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "The Incident’s Unexpected Aftermath",
+          "SortOrder": "10409",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-4\\OEBPS\\Text\\chapter4.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10410019"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-4\\OEBPS\\Text\\insert4.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10410020"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-4\\OEBPS\\Text\\chapter4_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10410021"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "The Fires of Farewell",
+          "SortOrder": "10410",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-4\\OEBPS\\Text\\chapter5.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10411022"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-4\\OEBPS\\Text\\insert5.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10411023"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-4\\OEBPS\\Text\\chapter5_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10411024"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-4\\OEBPS\\Text\\insert6.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10411025"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-4\\OEBPS\\Text\\chapter5_2.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10411026"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 1,
+          "ChapType": "Bonus",
+          "Name": "Flustered on a Full Moon Night",
+          "SortOrder": "10411",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-4\\OEBPS\\Text\\sidestory.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10412027"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-4\\OEBPS\\Text\\insert7.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10412028"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-4\\OEBPS\\Text\\sidestory2.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10412029"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 1,
+          "ChapType": "Bonus",
+          "Name": "The Reason He Confessed [Cain]",
+          "SortOrder": "1041301",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-4\\OEBPS\\Text\\bonus.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10414031"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "<h2>The Reason He Confessed</h2>",
+          "SubSections": [],
+          "Chapters": []
+        }
+      ]
+    },
+    {
+      "CType": 0,
+      "ChapType": "Story",
+      "Name": "Volume 5",
+      "SortOrder": "105",
+      "Sources": [
+        {
+          "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-5\\OEBPS\\Text\\cover.xhtml",
+          "Alternates": [],
+          "OtherSide": null,
+          "SortOrder": "10502001"
+        },
+        {
+          "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-5\\OEBPS\\Text\\frontmatter1.xhtml",
+          "Alternates": [],
+          "OtherSide": null,
+          "SortOrder": "10503002"
+        },
+        {
+          "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-5\\OEBPS\\Text\\frontmatter2.xhtml",
+          "Alternates": [],
+          "OtherSide": null,
+          "SortOrder": "10503003"
+        },
+        {
+          "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-5\\OEBPS\\Text\\frontmatter3.xhtml",
+          "Alternates": [],
+          "OtherSide": {
+            "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-5\\OEBPS\\Text\\frontmatter4.xhtml",
+            "Alternates": [],
+            "OtherSide": null,
+            "SortOrder": "10503005"
+          },
+          "SortOrder": "10503004"
+        }
+      ],
+      "LinkedChapters": [],
+      "EndsBeforeLine": "",
+      "StartsAtLine": "",
+      "SubSections": [],
+      "Chapters": [
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "An Unexpected Reunion at Liadna",
+          "SortOrder": "10503",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-5\\OEBPS\\Text\\chapter1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10504007"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-5\\OEBPS\\Text\\insert1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10504008"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-5\\OEBPS\\Text\\chapter1_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10504009"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 1,
+          "ChapType": "Bonus",
+          "Name": "Out of His Reach [Reggie]",
+          "SortOrder": "10504",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-5\\OEBPS\\Text\\interlude1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10505010"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "The Captive Spellcaster",
+          "SortOrder": "10505",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-5\\OEBPS\\Text\\chapter2.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10506011"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-5\\OEBPS\\Text\\insert2.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10506012"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-5\\OEBPS\\Text\\chapter2_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10506013"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "Watching Him Leave [Alan]",
+          "SortOrder": "10506",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-5\\OEBPS\\Text\\interlude2.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10507014"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "A Place to Call Home",
+          "SortOrder": "10507",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-5\\OEBPS\\Text\\chapter3.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10508015"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-5\\OEBPS\\Text\\insert3.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10508016"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-5\\OEBPS\\Text\\chapter3_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10508017"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 1,
+          "ChapType": "Bonus",
+          "Name": "What I Can Do for Her [Reginald]",
+          "SortOrder": "10508",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-5\\OEBPS\\Text\\interlude3.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10509018"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-5\\OEBPS\\Text\\insert4.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10509019"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-5\\OEBPS\\Text\\interlude3_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10509020"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "A Thorny Future",
+          "SortOrder": "10509",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-5\\OEBPS\\Text\\chapter4.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10510021"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "The Blood Flowing Through Eirlain",
+          "SortOrder": "10510",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-5\\OEBPS\\Text\\chapter5.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10511022"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-5\\OEBPS\\Text\\insert5.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10511023"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-5\\OEBPS\\Text\\chapter5_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10511024"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 1,
+          "ChapType": "Bonus",
+          "Name": "Washed Ashore [Ada]",
+          "SortOrder": "10511",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-5\\OEBPS\\Text\\interlude4.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10512025"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "The Light That Shines on the Battlefield",
+          "SortOrder": "10512",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-5\\OEBPS\\Text\\chapter6.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10513026"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-5\\OEBPS\\Text\\insert6.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10513027"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-5\\OEBPS\\Text\\chapter6_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10513028"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 1,
+          "ChapType": "Bonus",
+          "Name": "Never Let You Go [Reggie]",
+          "SortOrder": "10513",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-5\\OEBPS\\Text\\interlude5.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10514029"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "The Post-Battle Agenda",
+          "SortOrder": "10514",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-5\\OEBPS\\Text\\chapter7.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10515030"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-5\\OEBPS\\Text\\insert7.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10515031"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-5\\OEBPS\\Text\\chapter7_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10515032"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 1,
+          "ChapType": "Bonus",
+          "Name": "The Yearning After the Kiss",
+          "SortOrder": "10515",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-5\\OEBPS\\Text\\sidestory.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10516033"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 1,
+          "ChapType": "Bonus",
+          "Name": "His Perspective [Isaac]",
+          "SortOrder": "1051701",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-5\\OEBPS\\Text\\bonus.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10518035"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "<h2>His Perspective</h2>",
+          "SubSections": [],
+          "Chapters": []
+        }
+      ]
+    },
+    {
+      "CType": 0,
+      "ChapType": "Story",
+      "Name": "Volume 6",
+      "SortOrder": "106",
+      "Sources": [
+        {
+          "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-6\\OEBPS\\Text\\cover.xhtml",
+          "Alternates": [],
+          "OtherSide": null,
+          "SortOrder": "10602001"
+        },
+        {
+          "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-6\\OEBPS\\Text\\frontmatter1.xhtml",
+          "Alternates": [],
+          "OtherSide": null,
+          "SortOrder": "10603002"
+        },
+        {
+          "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-6\\OEBPS\\Text\\frontmatter2.xhtml",
+          "Alternates": [],
+          "OtherSide": {
+            "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-6\\OEBPS\\Text\\frontmatter3.xhtml",
+            "Alternates": [],
+            "OtherSide": null,
+            "SortOrder": "10603004"
+          },
+          "SortOrder": "10603003"
+        },
+        {
+          "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-6\\OEBPS\\Text\\frontmatter4.xhtml",
+          "Alternates": [],
+          "OtherSide": null,
+          "SortOrder": "10603005"
+        }
+      ],
+      "LinkedChapters": [],
+      "EndsBeforeLine": "",
+      "StartsAtLine": "",
+      "SubSections": [],
+      "Chapters": [
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "What the Thorn Princess Once Sought",
+          "SortOrder": "10603",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-6\\OEBPS\\Text\\chapter1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10604007"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-6\\OEBPS\\Text\\insert1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10604008"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-6\\OEBPS\\Text\\chapter1-1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10604009"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 1,
+          "ChapType": "Bonus",
+          "Name": "What Can I Do for You? [Cain]",
+          "SortOrder": "10604",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-6\\OEBPS\\Text\\interlude1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10605010"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 1,
+          "ChapType": "Bonus",
+          "Name": "And Thus Did They Meet [Ada]",
+          "SortOrder": "10605",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-6\\OEBPS\\Text\\interlude2.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10606011"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "The Assault on Fort Nazant",
+          "SortOrder": "10606",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-6\\OEBPS\\Text\\chapter2.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10607012"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-6\\OEBPS\\Text\\insert2.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10607013"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-6\\OEBPS\\Text\\chapter2-1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10607014"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 1,
+          "ChapType": "Bonus",
+          "Name": "A Sacrificial Bird [Damian]",
+          "SortOrder": "10607",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-6\\OEBPS\\Text\\interlude3.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10608015"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "Battle on the Sestina Plains",
+          "SortOrder": "10608",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-6\\OEBPS\\Text\\chapter3.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10609016"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-6\\OEBPS\\Text\\insert3.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10609017"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-6\\OEBPS\\Text\\chapter3-1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10609018"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "The Thorn Princess and Her Memories",
+          "SortOrder": "10609",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-6\\OEBPS\\Text\\chapter4.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10610019"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-6\\OEBPS\\Text\\insert4.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10610020"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "To the Royal Capital",
+          "SortOrder": "10610",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-6\\OEBPS\\Text\\chapter5.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10611021"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "The Final Battle",
+          "SortOrder": "10611",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-6\\OEBPS\\Text\\chapter6.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10612022"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-6\\OEBPS\\Text\\insert5.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10612023"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-6\\OEBPS\\Text\\chapter6-1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10612024"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "A New Beginning",
+          "SortOrder": "10612",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-6\\OEBPS\\Text\\chapterf.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10613025"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-6\\OEBPS\\Text\\insert6.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10613026"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-6\\OEBPS\\Text\\chapterf-1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10613027"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-6\\OEBPS\\Text\\insert7.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10613028"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 1,
+          "ChapType": "Bonus",
+          "Name": "The Happily Ever After Continues",
+          "SortOrder": "10613",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-6\\OEBPS\\Text\\side1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10614029"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 1,
+          "ChapType": "Bonus",
+          "Name": "Another Reason I’m Glad I Married You [Reggie]",
+          "SortOrder": "1061501",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-6\\OEBPS\\Text\\bonus.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10616032"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "<h2>Another Reason I’m Glad I Married You</h2>",
+          "SubSections": [],
+          "Chapters": []
+        }
+      ]
+    },
+    {
+      "CType": 2,
+      "ChapType": "NonStory",
+      "Name": "Afterwords",
+      "SortOrder": "999",
+      "Sources": [],
+      "LinkedChapters": [],
+      "EndsBeforeLine": "",
+      "StartsAtLine": "",
+      "SubSections": [],
+      "Chapters": [
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "Volume 1",
+          "SortOrder": "10109",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy\\OEBPS\\Text\\afterword.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10110025"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "Volume 2",
+          "SortOrder": "10210",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-2\\OEBPS\\Text\\afterword.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10211024"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "Volume 3",
+          "SortOrder": "10313",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-3\\OEBPS\\Text\\afterword.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10314030"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "Volume 4",
+          "SortOrder": "10412",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-4\\OEBPS\\Text\\afterword.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10413030"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "Volume 5",
+          "SortOrder": "10516",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-5\\OEBPS\\Text\\afterword.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10517034"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "Volume 6",
+          "SortOrder": "10614",
+          "Sources": [
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-6\\OEBPS\\Text\\afterword.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10615030"
+            },
+            {
+              "File": "i-refuse-to-be-your-enemy\\i-refuse-to-be-your-enemy-volume-6\\OEBPS\\Text\\insert8.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10615031"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        }
+      ]
+    }
+  ]
+}
