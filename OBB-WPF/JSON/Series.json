@@ -5244,7 +5244,9 @@
         "ApiSlug": "deathbound-duke-s-daughter-volume-1",
         "FileName": "deathbound-duke-s-daughter-volume-1.epub",
         "Title": "Deathbound Duke's Daughter: Volume 1",
-        "EditedBy": [],
+        "EditedBy": [
+          "kuali"
+        ],
         "Published": "2020-06-27",
         "Order": 101
       },
@@ -5252,7 +5254,9 @@
         "ApiSlug": "deathbound-duke-s-daughter-volume-2",
         "FileName": "deathbound-duke-s-daughter-volume-2.epub",
         "Title": "Deathbound Duke's Daughter: Volume 2",
-        "EditedBy": [],
+        "EditedBy": [
+          "kuali"
+        ],
         "Published": "2020-09-19",
         "Order": 102
       }

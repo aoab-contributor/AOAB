@@ -1,0 +1,2752 @@
+{
+  "Cover": {
+    "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\cover.xhtml",
+    "Alternates": [],
+    "OtherSide": null,
+    "SortOrder": "10102001"
+  },
+  "Author": "Terasu Senoo",
+  "AuthorSort": "SENOO, TERASU",
+  "Name": "Deathbound Duke's Daughter",
+  "InternalName": "deathbound-duke-s-daughter",
+  "UnusedSources": [
+    {
+      "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\copyright.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10113040"
+    },
+    {
+      "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\frontmatter1.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10103002"
+    },
+    {
+      "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\frontmatter2.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10103003"
+    },
+    {
+      "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\frontmatter3.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10103004"
+    },
+    {
+      "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\frontmatter4.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10103005"
+    },
+    {
+      "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\signup.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10112039"
+    },
+    {
+      "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\toc.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10103006"
+    },
+    {
+      "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\copyright.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10214042"
+    },
+    {
+      "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\cover.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10202001"
+    },
+    {
+      "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\frontmatter1.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10203002"
+    },
+    {
+      "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\frontmatter2.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10203003"
+    },
+    {
+      "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\frontmatter3.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10203004"
+    },
+    {
+      "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\frontmatter4.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10203005"
+    },
+    {
+      "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\frontmatter5.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10203006"
+    },
+    {
+      "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\signup.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10213041"
+    },
+    {
+      "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\toc.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10203007"
+    }
+  ],
+  "Chapters": [
+    {
+      "CType": 0,
+      "ChapType": "Story",
+      "Name": "Erika Aurelia and the Seafarer's Ruins",
+      "SortOrder": "101",
+      "Sources": [
+        {
+          "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\bonus1.xhtml",
+          "Alternates": [],
+          "OtherSide": null,
+          "SortOrder": "10111034"
+        },
+        {
+          "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\bonus2.xhtml",
+          "Alternates": [],
+          "OtherSide": null,
+          "SortOrder": "10111035"
+        },
+        {
+          "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\bonus3.xhtml",
+          "Alternates": [],
+          "OtherSide": null,
+          "SortOrder": "10111036"
+        },
+        {
+          "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\bonus4.xhtml",
+          "Alternates": [],
+          "OtherSide": null,
+          "SortOrder": "10111037"
+        },
+        {
+          "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\bonus5.xhtml",
+          "Alternates": [],
+          "OtherSide": null,
+          "SortOrder": "10111038"
+        }
+      ],
+      "LinkedChapters": [],
+      "EndsBeforeLine": "",
+      "StartsAtLine": "",
+      "SubSections": [],
+      "Chapters": [
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "Prologue: Erika Aurelia, the Villainess",
+          "SortOrder": "10103",
+          "Sources": [
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\prologue.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10104007"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "Chapter 1: The Spring Palace",
+          "SortOrder": "10104",
+          "Sources": [
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10105008"
+            },
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\insert1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10105009"
+            },
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter1_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10105010"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "<h2>2</h2>",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": [
+            {
+              "CType": 0,
+              "ChapType": "Story",
+              "Name": "2",
+              "SortOrder": "1010401",
+              "Sources": [
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10105008"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\insert1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10105009"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter1_1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10105010"
+                }
+              ],
+              "LinkedChapters": [],
+              "EndsBeforeLine": "<h2>3</h2>",
+              "StartsAtLine": "<h2>2</h2>",
+              "SubSections": [],
+              "Chapters": []
+            },
+            {
+              "CType": 0,
+              "ChapType": "Story",
+              "Name": "3",
+              "SortOrder": "1010402",
+              "Sources": [
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10105008"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\insert1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10105009"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter1_1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10105010"
+                }
+              ],
+              "LinkedChapters": [],
+              "EndsBeforeLine": "<h2>4</h2>",
+              "StartsAtLine": "<h2>3</h2>",
+              "SubSections": [],
+              "Chapters": []
+            },
+            {
+              "CType": 0,
+              "ChapType": "Story",
+              "Name": "4",
+              "SortOrder": "1010403",
+              "Sources": [
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10105008"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\insert1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10105009"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter1_1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10105010"
+                }
+              ],
+              "LinkedChapters": [],
+              "EndsBeforeLine": "<h2>5</h2>",
+              "StartsAtLine": "<h2>4</h2>",
+              "SubSections": [],
+              "Chapters": []
+            },
+            {
+              "CType": 0,
+              "ChapType": "Story",
+              "Name": "5",
+              "SortOrder": "1010404",
+              "Sources": [
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10105008"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\insert1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10105009"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter1_1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10105010"
+                }
+              ],
+              "LinkedChapters": [],
+              "EndsBeforeLine": "<h2>6</h2>",
+              "StartsAtLine": "<h2>5</h2>",
+              "SubSections": [],
+              "Chapters": []
+            },
+            {
+              "CType": 0,
+              "ChapType": "Story",
+              "Name": "6",
+              "SortOrder": "1010405",
+              "Sources": [
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10105008"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\insert1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10105009"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter1_1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10105010"
+                }
+              ],
+              "LinkedChapters": [],
+              "EndsBeforeLine": "",
+              "StartsAtLine": "<h2>6</h2>",
+              "SubSections": [],
+              "Chapters": []
+            }
+          ]
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "Chapter 2: The Seafarer’s Ruins",
+          "SortOrder": "10105",
+          "Sources": [
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter2.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10106011"
+            },
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\insert2.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10106012"
+            },
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter2_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10106013"
+            },
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\insert3.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10106014"
+            },
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter2_2.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10106015"
+            },
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\insert4.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10106016"
+            },
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter2_3.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10106017"
+            },
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\insert5.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10106018"
+            },
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter2_4.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10106019"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "<h2>2</h2>",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": [
+            {
+              "CType": 0,
+              "ChapType": "Story",
+              "Name": "2",
+              "SortOrder": "1010501",
+              "Sources": [
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106011"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\insert2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106012"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter2_1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106013"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\insert3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106014"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter2_2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106015"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\insert4.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106016"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter2_3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106017"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\insert5.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106018"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter2_4.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106019"
+                }
+              ],
+              "LinkedChapters": [],
+              "EndsBeforeLine": "<h2>3</h2>",
+              "StartsAtLine": "<h2>2</h2>",
+              "SubSections": [],
+              "Chapters": []
+            },
+            {
+              "CType": 0,
+              "ChapType": "Story",
+              "Name": "3",
+              "SortOrder": "1010502",
+              "Sources": [
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106011"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\insert2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106012"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter2_1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106013"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\insert3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106014"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter2_2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106015"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\insert4.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106016"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter2_3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106017"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\insert5.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106018"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter2_4.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106019"
+                }
+              ],
+              "LinkedChapters": [],
+              "EndsBeforeLine": "<h2>4</h2>",
+              "StartsAtLine": "<h2>3</h2>",
+              "SubSections": [],
+              "Chapters": []
+            },
+            {
+              "CType": 0,
+              "ChapType": "Story",
+              "Name": "4",
+              "SortOrder": "1010503",
+              "Sources": [
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106011"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\insert2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106012"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter2_1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106013"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\insert3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106014"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter2_2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106015"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\insert4.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106016"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter2_3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106017"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\insert5.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106018"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter2_4.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106019"
+                }
+              ],
+              "LinkedChapters": [],
+              "EndsBeforeLine": "<h2>5</h2>",
+              "StartsAtLine": "<h2>4</h2>",
+              "SubSections": [],
+              "Chapters": []
+            },
+            {
+              "CType": 0,
+              "ChapType": "Story",
+              "Name": "5",
+              "SortOrder": "1010504",
+              "Sources": [
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106011"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\insert2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106012"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter2_1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106013"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\insert3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106014"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter2_2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106015"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\insert4.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106016"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter2_3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106017"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\insert5.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106018"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter2_4.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106019"
+                }
+              ],
+              "LinkedChapters": [],
+              "EndsBeforeLine": "<h2>6</h2>",
+              "StartsAtLine": "<h2>5</h2>",
+              "SubSections": [],
+              "Chapters": []
+            },
+            {
+              "CType": 0,
+              "ChapType": "Story",
+              "Name": "6",
+              "SortOrder": "1010505",
+              "Sources": [
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106011"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\insert2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106012"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter2_1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106013"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\insert3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106014"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter2_2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106015"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\insert4.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106016"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter2_3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106017"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\insert5.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106018"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter2_4.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10106019"
+                }
+              ],
+              "LinkedChapters": [],
+              "EndsBeforeLine": "",
+              "StartsAtLine": "<h2>6</h2>",
+              "SubSections": [],
+              "Chapters": []
+            }
+          ]
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "Chapter 3: The Megalith Altar",
+          "SortOrder": "10106",
+          "Sources": [
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter3.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10107020"
+            },
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\insert6.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10107021"
+            },
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter3_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10107022"
+            },
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\insert7.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10107023"
+            },
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter3_2.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10107024"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "<h2>2</h2>",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": [
+            {
+              "CType": 0,
+              "ChapType": "Story",
+              "Name": "2",
+              "SortOrder": "1010601",
+              "Sources": [
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10107020"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\insert6.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10107021"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter3_1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10107022"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\insert7.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10107023"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter3_2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10107024"
+                }
+              ],
+              "LinkedChapters": [],
+              "EndsBeforeLine": "<h2>3</h2>",
+              "StartsAtLine": "<h2>2</h2>",
+              "SubSections": [],
+              "Chapters": []
+            },
+            {
+              "CType": 0,
+              "ChapType": "Story",
+              "Name": "3",
+              "SortOrder": "1010602",
+              "Sources": [
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10107020"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\insert6.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10107021"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter3_1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10107022"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\insert7.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10107023"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter3_2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10107024"
+                }
+              ],
+              "LinkedChapters": [],
+              "EndsBeforeLine": "<h2>4</h2>",
+              "StartsAtLine": "<h2>3</h2>",
+              "SubSections": [],
+              "Chapters": []
+            },
+            {
+              "CType": 0,
+              "ChapType": "Story",
+              "Name": "4",
+              "SortOrder": "1010603",
+              "Sources": [
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10107020"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\insert6.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10107021"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter3_1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10107022"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\insert7.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10107023"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter3_2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10107024"
+                }
+              ],
+              "LinkedChapters": [],
+              "EndsBeforeLine": "",
+              "StartsAtLine": "<h2>4</h2>",
+              "SubSections": [],
+              "Chapters": []
+            }
+          ]
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "Chapter 4: The Promised Land",
+          "SortOrder": "10107",
+          "Sources": [
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter4.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10108025"
+            },
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\insert8.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10108026"
+            },
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter4_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10108027"
+            },
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\insert9.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10108028"
+            },
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter4_2.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10108029"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "Last Chapter: Claus Hafan’s Letter",
+          "SortOrder": "10108",
+          "Sources": [
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter5.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10109030"
+            },
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\insert10.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10109031"
+            },
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\chapter5_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10109032"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "Reflections of Eduard Aurelia",
+          "SortOrder": "10109",
+          "Sources": [
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-1\\OEBPS\\Text\\extra1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10110033"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        }
+      ]
+    },
+    {
+      "CType": 0,
+      "ChapType": "Story",
+      "Name": "Erika Aurelia and the Angel's Crypt",
+      "SortOrder": "102",
+      "Sources": [
+        {
+          "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\bonus1.xhtml",
+          "Alternates": [],
+          "OtherSide": null,
+          "SortOrder": "10212036"
+        },
+        {
+          "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\bonus2.xhtml",
+          "Alternates": [],
+          "OtherSide": null,
+          "SortOrder": "10212037"
+        },
+        {
+          "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\bonus3.xhtml",
+          "Alternates": [],
+          "OtherSide": null,
+          "SortOrder": "10212038"
+        },
+        {
+          "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\bonus4.xhtml",
+          "Alternates": [],
+          "OtherSide": null,
+          "SortOrder": "10212039"
+        },
+        {
+          "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\bonus5.xhtml",
+          "Alternates": [],
+          "OtherSide": null,
+          "SortOrder": "10212040"
+        }
+      ],
+      "LinkedChapters": [],
+      "EndsBeforeLine": "",
+      "StartsAtLine": "",
+      "SubSections": [],
+      "Chapters": [
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "Prologue: Erika Aurelia, Destined to Die",
+          "SortOrder": "10203",
+          "Sources": [
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\prologue.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10204008"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "Chapter 1: Ynys Negesydd",
+          "SortOrder": "10204",
+          "Sources": [
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10205009"
+            },
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10205010"
+            },
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter1_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10205011"
+            },
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert2.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10205012"
+            },
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter1_2.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10205013"
+            },
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert3.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10205014"
+            },
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter1_3.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10205015"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "<h2>2</h2>",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": [
+            {
+              "CType": 0,
+              "ChapType": "Story",
+              "Name": "2",
+              "SortOrder": "1020401",
+              "Sources": [
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205009"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205010"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter1_1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205011"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205012"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter1_2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205013"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205014"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter1_3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205015"
+                }
+              ],
+              "LinkedChapters": [],
+              "EndsBeforeLine": "<h2>3</h2>",
+              "StartsAtLine": "<h2>2</h2>",
+              "SubSections": [],
+              "Chapters": []
+            },
+            {
+              "CType": 0,
+              "ChapType": "Story",
+              "Name": "3",
+              "SortOrder": "1020402",
+              "Sources": [
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205009"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205010"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter1_1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205011"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205012"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter1_2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205013"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205014"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter1_3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205015"
+                }
+              ],
+              "LinkedChapters": [],
+              "EndsBeforeLine": "<h2>4</h2>",
+              "StartsAtLine": "<h2>3</h2>",
+              "SubSections": [],
+              "Chapters": []
+            },
+            {
+              "CType": 0,
+              "ChapType": "Story",
+              "Name": "4",
+              "SortOrder": "1020403",
+              "Sources": [
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205009"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205010"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter1_1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205011"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205012"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter1_2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205013"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205014"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter1_3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205015"
+                }
+              ],
+              "LinkedChapters": [],
+              "EndsBeforeLine": "<h2>5</h2>",
+              "StartsAtLine": "<h2>4</h2>",
+              "SubSections": [],
+              "Chapters": []
+            },
+            {
+              "CType": 0,
+              "ChapType": "Story",
+              "Name": "5",
+              "SortOrder": "1020404",
+              "Sources": [
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205009"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205010"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter1_1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205011"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205012"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter1_2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205013"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205014"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter1_3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205015"
+                }
+              ],
+              "LinkedChapters": [],
+              "EndsBeforeLine": "<h2>6</h2>",
+              "StartsAtLine": "<h2>5</h2>",
+              "SubSections": [],
+              "Chapters": []
+            },
+            {
+              "CType": 0,
+              "ChapType": "Story",
+              "Name": "6",
+              "SortOrder": "1020405",
+              "Sources": [
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205009"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205010"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter1_1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205011"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205012"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter1_2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205013"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205014"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter1_3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205015"
+                }
+              ],
+              "LinkedChapters": [],
+              "EndsBeforeLine": "<h2>7</h2>",
+              "StartsAtLine": "<h2>6</h2>",
+              "SubSections": [],
+              "Chapters": []
+            },
+            {
+              "CType": 0,
+              "ChapType": "Story",
+              "Name": "7",
+              "SortOrder": "1020406",
+              "Sources": [
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205009"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205010"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter1_1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205011"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205012"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter1_2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205013"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205014"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter1_3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205015"
+                }
+              ],
+              "LinkedChapters": [],
+              "EndsBeforeLine": "<h2>8</h2>",
+              "StartsAtLine": "<h2>7</h2>",
+              "SubSections": [],
+              "Chapters": []
+            },
+            {
+              "CType": 0,
+              "ChapType": "Story",
+              "Name": "8",
+              "SortOrder": "1020407",
+              "Sources": [
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205009"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205010"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter1_1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205011"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205012"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter1_2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205013"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205014"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter1_3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205015"
+                }
+              ],
+              "LinkedChapters": [],
+              "EndsBeforeLine": "<h2>9</h2>",
+              "StartsAtLine": "<h2>8</h2>",
+              "SubSections": [],
+              "Chapters": []
+            },
+            {
+              "CType": 0,
+              "ChapType": "Story",
+              "Name": "9",
+              "SortOrder": "1020408",
+              "Sources": [
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205009"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205010"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter1_1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205011"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205012"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter1_2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205013"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205014"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter1_3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205015"
+                }
+              ],
+              "LinkedChapters": [],
+              "EndsBeforeLine": "<h2>10</h2>",
+              "StartsAtLine": "<h2>9</h2>",
+              "SubSections": [],
+              "Chapters": []
+            },
+            {
+              "CType": 0,
+              "ChapType": "Story",
+              "Name": "10",
+              "SortOrder": "1020409",
+              "Sources": [
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205009"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205010"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter1_1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205011"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205012"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter1_2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205013"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205014"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter1_3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205015"
+                }
+              ],
+              "LinkedChapters": [],
+              "EndsBeforeLine": "<h2>11</h2>",
+              "StartsAtLine": "<h2>10</h2>",
+              "SubSections": [],
+              "Chapters": []
+            },
+            {
+              "CType": 0,
+              "ChapType": "Story",
+              "Name": "11",
+              "SortOrder": "1020410",
+              "Sources": [
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205009"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205010"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter1_1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205011"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205012"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter1_2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205013"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205014"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter1_3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10205015"
+                }
+              ],
+              "LinkedChapters": [],
+              "EndsBeforeLine": "",
+              "StartsAtLine": "<h2>11</h2>",
+              "SubSections": [],
+              "Chapters": []
+            }
+          ]
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "Chapter 2: The Joust",
+          "SortOrder": "10205",
+          "Sources": [
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter2.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10206016"
+            },
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert4.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10206017"
+            },
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter2_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10206018"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "<h2>2</h2>",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": [
+            {
+              "CType": 0,
+              "ChapType": "Story",
+              "Name": "2",
+              "SortOrder": "1020501",
+              "Sources": [
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10206016"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert4.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10206017"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter2_1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10206018"
+                }
+              ],
+              "LinkedChapters": [],
+              "EndsBeforeLine": "<h2>3</h2>",
+              "StartsAtLine": "<h2>2</h2>",
+              "SubSections": [],
+              "Chapters": []
+            },
+            {
+              "CType": 0,
+              "ChapType": "Story",
+              "Name": "3",
+              "SortOrder": "1020502",
+              "Sources": [
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10206016"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert4.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10206017"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter2_1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10206018"
+                }
+              ],
+              "LinkedChapters": [],
+              "EndsBeforeLine": "<h2>4</h2>",
+              "StartsAtLine": "<h2>3</h2>",
+              "SubSections": [],
+              "Chapters": []
+            },
+            {
+              "CType": 0,
+              "ChapType": "Story",
+              "Name": "4",
+              "SortOrder": "1020503",
+              "Sources": [
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10206016"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert4.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10206017"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter2_1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10206018"
+                }
+              ],
+              "LinkedChapters": [],
+              "EndsBeforeLine": "",
+              "StartsAtLine": "<h2>4</h2>",
+              "SubSections": [],
+              "Chapters": []
+            }
+          ]
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "Chapter 3: The Angel’s Crypt",
+          "SortOrder": "10206",
+          "Sources": [
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10207019"
+            },
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert5.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10207020"
+            },
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10207021"
+            },
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert6.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10207022"
+            },
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3_2.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10207023"
+            },
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert7.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10207024"
+            },
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3_3.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10207025"
+            },
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert8.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10207026"
+            },
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3_4.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10207027"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "<h2>2</h2>",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": [
+            {
+              "CType": 0,
+              "ChapType": "Story",
+              "Name": "2",
+              "SortOrder": "1020601",
+              "Sources": [
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207019"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert5.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207020"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3_1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207021"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert6.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207022"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3_2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207023"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert7.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207024"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3_3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207025"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert8.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207026"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3_4.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207027"
+                }
+              ],
+              "LinkedChapters": [],
+              "EndsBeforeLine": "<h2>3</h2>",
+              "StartsAtLine": "<h2>2</h2>",
+              "SubSections": [],
+              "Chapters": []
+            },
+            {
+              "CType": 0,
+              "ChapType": "Story",
+              "Name": "3",
+              "SortOrder": "1020602",
+              "Sources": [
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207019"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert5.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207020"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3_1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207021"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert6.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207022"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3_2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207023"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert7.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207024"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3_3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207025"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert8.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207026"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3_4.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207027"
+                }
+              ],
+              "LinkedChapters": [],
+              "EndsBeforeLine": "<h2>4</h2>",
+              "StartsAtLine": "<h2>3</h2>",
+              "SubSections": [],
+              "Chapters": []
+            },
+            {
+              "CType": 0,
+              "ChapType": "Story",
+              "Name": "4",
+              "SortOrder": "1020603",
+              "Sources": [
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207019"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert5.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207020"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3_1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207021"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert6.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207022"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3_2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207023"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert7.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207024"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3_3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207025"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert8.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207026"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3_4.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207027"
+                }
+              ],
+              "LinkedChapters": [],
+              "EndsBeforeLine": "<h2>5</h2>",
+              "StartsAtLine": "<h2>4</h2>",
+              "SubSections": [],
+              "Chapters": []
+            },
+            {
+              "CType": 0,
+              "ChapType": "Story",
+              "Name": "5",
+              "SortOrder": "1020604",
+              "Sources": [
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207019"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert5.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207020"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3_1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207021"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert6.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207022"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3_2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207023"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert7.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207024"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3_3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207025"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert8.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207026"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3_4.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207027"
+                }
+              ],
+              "LinkedChapters": [],
+              "EndsBeforeLine": "<h2>6</h2>",
+              "StartsAtLine": "<h2>5</h2>",
+              "SubSections": [],
+              "Chapters": []
+            },
+            {
+              "CType": 0,
+              "ChapType": "Story",
+              "Name": "6",
+              "SortOrder": "1020605",
+              "Sources": [
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207019"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert5.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207020"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3_1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207021"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert6.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207022"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3_2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207023"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert7.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207024"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3_3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207025"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert8.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207026"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3_4.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207027"
+                }
+              ],
+              "LinkedChapters": [],
+              "EndsBeforeLine": "<h2>7</h2>",
+              "StartsAtLine": "<h2>6</h2>",
+              "SubSections": [],
+              "Chapters": []
+            },
+            {
+              "CType": 0,
+              "ChapType": "Story",
+              "Name": "7",
+              "SortOrder": "1020606",
+              "Sources": [
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207019"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert5.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207020"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3_1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207021"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert6.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207022"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3_2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207023"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert7.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207024"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3_3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207025"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert8.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207026"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3_4.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207027"
+                }
+              ],
+              "LinkedChapters": [],
+              "EndsBeforeLine": "<h2>8</h2>",
+              "StartsAtLine": "<h2>7</h2>",
+              "SubSections": [],
+              "Chapters": []
+            },
+            {
+              "CType": 0,
+              "ChapType": "Story",
+              "Name": "8",
+              "SortOrder": "1020607",
+              "Sources": [
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207019"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert5.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207020"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3_1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207021"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert6.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207022"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3_2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207023"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert7.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207024"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3_3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207025"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert8.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207026"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3_4.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207027"
+                }
+              ],
+              "LinkedChapters": [],
+              "EndsBeforeLine": "<h2>9</h2>",
+              "StartsAtLine": "<h2>8</h2>",
+              "SubSections": [],
+              "Chapters": []
+            },
+            {
+              "CType": 0,
+              "ChapType": "Story",
+              "Name": "9",
+              "SortOrder": "1020608",
+              "Sources": [
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207019"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert5.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207020"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3_1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207021"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert6.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207022"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3_2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207023"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert7.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207024"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3_3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207025"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert8.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207026"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3_4.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207027"
+                }
+              ],
+              "LinkedChapters": [],
+              "EndsBeforeLine": "<h2>10</h2>",
+              "StartsAtLine": "<h2>9</h2>",
+              "SubSections": [],
+              "Chapters": []
+            },
+            {
+              "CType": 0,
+              "ChapType": "Story",
+              "Name": "10",
+              "SortOrder": "1020609",
+              "Sources": [
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207019"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert5.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207020"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3_1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207021"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert6.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207022"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3_2.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207023"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert7.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207024"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3_3.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207025"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert8.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207026"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter3_4.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10207027"
+                }
+              ],
+              "LinkedChapters": [],
+              "EndsBeforeLine": "",
+              "StartsAtLine": "<h2>10</h2>",
+              "SubSections": [],
+              "Chapters": []
+            }
+          ]
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "Chapter 4: The Sky Throne",
+          "SortOrder": "10207",
+          "Sources": [
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter4.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10208028"
+            },
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert9.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10208029"
+            },
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter4_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10208030"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "<h2>2</h2>",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": [
+            {
+              "CType": 0,
+              "ChapType": "Story",
+              "Name": "2",
+              "SortOrder": "1020701",
+              "Sources": [
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter4.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10208028"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert9.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10208029"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter4_1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10208030"
+                }
+              ],
+              "LinkedChapters": [],
+              "EndsBeforeLine": "<h2>3</h2>",
+              "StartsAtLine": "<h2>2</h2>",
+              "SubSections": [],
+              "Chapters": []
+            },
+            {
+              "CType": 0,
+              "ChapType": "Story",
+              "Name": "3",
+              "SortOrder": "1020702",
+              "Sources": [
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter4.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10208028"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert9.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10208029"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter4_1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10208030"
+                }
+              ],
+              "LinkedChapters": [],
+              "EndsBeforeLine": "<h2>4</h2>",
+              "StartsAtLine": "<h2>3</h2>",
+              "SubSections": [],
+              "Chapters": []
+            },
+            {
+              "CType": 0,
+              "ChapType": "Story",
+              "Name": "4",
+              "SortOrder": "1020703",
+              "Sources": [
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter4.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10208028"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert9.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10208029"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter4_1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10208030"
+                }
+              ],
+              "LinkedChapters": [],
+              "EndsBeforeLine": "<h2>5</h2>",
+              "StartsAtLine": "<h2>4</h2>",
+              "SubSections": [],
+              "Chapters": []
+            },
+            {
+              "CType": 0,
+              "ChapType": "Story",
+              "Name": "5",
+              "SortOrder": "1020704",
+              "Sources": [
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter4.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10208028"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert9.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10208029"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter4_1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10208030"
+                }
+              ],
+              "LinkedChapters": [],
+              "EndsBeforeLine": "<h2>6</h2>",
+              "StartsAtLine": "<h2>5</h2>",
+              "SubSections": [],
+              "Chapters": []
+            },
+            {
+              "CType": 0,
+              "ChapType": "Story",
+              "Name": "6",
+              "SortOrder": "1020705",
+              "Sources": [
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter4.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10208028"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert9.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10208029"
+                },
+                {
+                  "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter4_1.xhtml",
+                  "Alternates": [],
+                  "OtherSide": null,
+                  "SortOrder": "10208030"
+                }
+              ],
+              "LinkedChapters": [],
+              "EndsBeforeLine": "",
+              "StartsAtLine": "<h2>6</h2>",
+              "SubSections": [],
+              "Chapters": []
+            }
+          ]
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "August Ignitia’s Journal",
+          "SortOrder": "10208",
+          "Sources": [
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\journal1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10209031"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "Last Chapter: Where the Sun Sets",
+          "SortOrder": "10209",
+          "Sources": [
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\chapter5.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10210032"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "Records of Eduard Aurelia",
+          "SortOrder": "10210",
+          "Sources": [
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\records.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10211033"
+            },
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\insert10.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10211034"
+            },
+            {
+              "File": "deathbound-duke-s-daughter\\deathbound-duke-s-daughter-volume-2\\OEBPS\\Text\\records_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10211035"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        }
+      ]
+    }
+  ]
+}
