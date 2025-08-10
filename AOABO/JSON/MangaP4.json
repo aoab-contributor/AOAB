@@ -219,8 +219,8 @@
         "OverrideName": "After Her Departure",
         "POV": "Ferdinand",
         "Source": "M4V2 Written Bonus",
-        "EarlySortOrder": "040113",
-        "LateSortOrder": "04019604",
+        "EarlySortOrder": "040114",
+        "LateSortOrder": "04019605",
         "EarlyYear": 6,
         "LateYear": 6,
         "EarlySeason": "Winter",
@@ -302,8 +302,8 @@
         "OverrideName": "",
         "POV": "",
         "Source": "M4V3 Extra",
-        "EarlySortOrder": "040120",
-        "LateSortOrder": "04019606",
+        "EarlySortOrder": "040121",
+        "LateSortOrder": "04019607",
         "EarlyYear": 6,
         "LateYear": 6,
         "EarlySeason": "Winter",
@@ -391,8 +391,8 @@
         "OverrideName": "Out of My Lady's Sight",
         "POV": "Leonore",
         "Source": "M4V3 Written Bonus",
-        "EarlySortOrder": "040125",
-        "LateSortOrder": "04019607",
+        "EarlySortOrder": "040126",
+        "LateSortOrder": "04019608",
         "EarlyYear": 6,
         "LateYear": 6,
         "EarlySeason": "Winter",
@@ -425,23 +425,27 @@
         "ProcessedInHannelore": false,
         "StartLine": null,
         "EndLine": null
-      }
-    ],
-    "ComfyLifeChapter": null,
-    "Afterword": null,
-    "Gallery": null,
-    "CharacterSheet": null,
-    "Maps": [
+      },
       {
+        "OCR": null,
+        "OverrideName": "Royal Academy Professors",
+        "POV": "",
+        "Source": "",
+        "EarlySortOrder": "Char03",
+        "LateSortOrder": "Char9602",
+        "EarlyYear": 6,
+        "LateYear": 6,
+        "EarlySeason": "Winter",
+        "LateSeason": "Winter",
         "OriginalFilenames": [
           "160",
           "161"
         ],
         "ChapterName": "Royal Academy Professors",
-        "SortOrder": "13",
+        "SortOrder": "",
         "Year": 0,
         "Season": "",
-        "Volume": "",
+        "Volume": "Char",
         "Set": "",
         "Priority": 0,
         "ProcessedInPartOne": false,
@@ -455,6 +459,11 @@
         "EndLine": null
       }
     ],
+    "ComfyLifeChapter": null,
+    "Afterword": null,
+    "Gallery": null,
+    "CharacterSheet": null,
+    "Maps": [],
     "CharacterPoll": null
   },
   {
@@ -548,8 +557,8 @@
         "OverrideName": "As Lady Rozemyne's Retainer",
         "POV": "Hartmut",
         "Source": "M4V4 Written Bonus",
-        "EarlySortOrder": "040128",
-        "LateSortOrder": "04019608",
+        "EarlySortOrder": "040129",
+        "LateSortOrder": "04019609",
         "EarlyYear": 6,
         "LateYear": 6,
         "EarlySeason": "Winter",
@@ -581,23 +590,27 @@
         "ProcessedInHannelore": false,
         "StartLine": null,
         "EndLine": null
-      }
-    ],
-    "ComfyLifeChapter": null,
-    "Afterword": null,
-    "Gallery": null,
-    "CharacterSheet": null,
-    "Maps": [
+      },
       {
+        "OCR": null,
+        "OverrideName": "Other Archduke Candidates",
+        "POV": "",
+        "Source": "",
+        "EarlySortOrder": "Char04",
+        "LateSortOrder": "Char9603",
+        "EarlyYear": 6,
+        "LateYear": 6,
+        "EarlySeason": "Winter",
+        "LateSeason": "Winter",
         "OriginalFilenames": [
           "176",
           "177"
         ],
         "ChapterName": "Other Archduke Candidates",
-        "SortOrder": "14",
+        "SortOrder": "",
         "Year": 0,
         "Season": "",
-        "Volume": "",
+        "Volume": "Char",
         "Set": "",
         "Priority": 0,
         "ProcessedInPartOne": false,
@@ -611,6 +624,11 @@
         "EndLine": null
       }
     ],
+    "ComfyLifeChapter": null,
+    "Afterword": null,
+    "Gallery": null,
+    "CharacterSheet": null,
+    "Maps": [],
     "CharacterPoll": null
   }
 ]

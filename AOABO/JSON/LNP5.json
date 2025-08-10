@@ -3223,7 +3223,7 @@
           "chapter9"
         ],
         "ChapterName": "The Spring Coming-of-Age Ceremony and Sylvester’s Departure",
-        "SortOrder": "050613",
+        "SortOrder": "050614",
         "Year": 8,
         "Season": "Spring",
         "Volume": "0506",
@@ -3246,7 +3246,7 @@
           "chapter10_1"
         ],
         "ChapterName": "Kids’ Tea Party",
-        "SortOrder": "050614",
+        "SortOrder": "050615",
         "Year": 9,
         "Season": "Summer",
         "Volume": "0506",
@@ -3267,7 +3267,7 @@
           "chapter11"
         ],
         "ChapterName": "The Leisegang Elders",
-        "SortOrder": "050615",
+        "SortOrder": "050616",
         "Year": 9,
         "Season": "Summer",
         "Volume": "0506",
@@ -3288,7 +3288,7 @@
           "chapter12"
         ],
         "ChapterName": "Sylvester Returns",
-        "SortOrder": "050617",
+        "SortOrder": "050618",
         "Year": 9,
         "Season": "Summer",
         "Volume": "0506",
@@ -3311,7 +3311,7 @@
           "chapter13_1"
         ],
         "ChapterName": "Letters from Ferdinand",
-        "SortOrder": "050618",
+        "SortOrder": "050619",
         "Year": 9,
         "Season": "Summer",
         "Volume": "0506",
@@ -3332,7 +3332,7 @@
           "chapter14"
         ],
         "ChapterName": "The Trombe Hunt and the Starbind Ceremony",
-        "SortOrder": "050619",
+        "SortOrder": "050620",
         "Year": 9,
         "Season": "Summer",
         "Volume": "0506",
@@ -3355,7 +3355,7 @@
           "chapter15_1"
         ],
         "ChapterName": "Tuuli’s Coming-of-Age Ceremony",
-        "SortOrder": "050620",
+        "SortOrder": "050621",
         "Year": 9,
         "Season": "Summer",
         "Volume": "0506",
@@ -3378,7 +3378,7 @@
           "chapter16_1"
         ],
         "ChapterName": "Interviews with the Aub",
-        "SortOrder": "050621",
+        "SortOrder": "050622",
         "Year": 9,
         "Season": "Autumn",
         "Volume": "0506",
@@ -3399,7 +3399,7 @@
           "chapter17"
         ],
         "ChapterName": "The Harvest Festival and the Gutenbergs’ Choices",
-        "SortOrder": "050622",
+        "SortOrder": "050623",
         "Year": 9,
         "Season": "Autumn",
         "Volume": "0506",
@@ -3447,7 +3447,7 @@
           "epilogue_1"
         ],
         "ChapterName": "Epilogue",
-        "SortOrder": "050623",
+        "SortOrder": "050624",
         "Year": 9,
         "Season": "Autumn",
         "Volume": "0506",
@@ -3502,8 +3502,8 @@
         "OverrideName": "",
         "POV": "Detlinde",
         "Source": "P5V6 Extra 1",
-        "EarlySortOrder": "050610",
-        "LateSortOrder": "05069602",
+        "EarlySortOrder": "050613",
+        "LateSortOrder": "05069603",
         "EarlyYear": 8,
         "LateYear": 9,
         "EarlySeason": "Spring",
@@ -3534,8 +3534,8 @@
         "OverrideName": "",
         "POV": "Sylvester",
         "Source": "P5V6 Extra 3",
-        "EarlySortOrder": "050616",
-        "LateSortOrder": "05069603",
+        "EarlySortOrder": "050617",
+        "LateSortOrder": "05069604",
         "EarlyYear": 9,
         "LateYear": 9,
         "EarlySeason": "Summer",
@@ -3567,7 +3567,7 @@
         "manga2"
       ],
       "ChapterName": "Comfy Life 506",
-      "SortOrder": "050624",
+      "SortOrder": "050625",
       "Year": 9,
       "Season": "Autumn",
       "Volume": "0506",

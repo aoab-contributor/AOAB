@@ -148,6 +148,7 @@ async Task SaveAll()
             case "FB3":
             case "FB4":
             case "FB5":
+            case "FB6":
                 fanbooks.Add(vol);
                 break;
             case "LN0101":
