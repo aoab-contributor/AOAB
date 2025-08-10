@@ -27,8 +27,18 @@ namespace OBB_WPF
         private string lSource = "about:blank";
         public string LeftSource {
             get { return lSource; }
-            set {
-                lSource = $"file://{Environment.CurrentDirectory}\\{value}";
+            set
+            {
+                if (string.IsNullOrWhiteSpace(value))
+                {
+                    Left.Visibility = Visibility.Hidden;
+                    lSource = "about:blank";
+                }
+                else
+                {
+                    Left.Visibility = Visibility.Visible;
+                    lSource = $"file://{Environment.CurrentDirectory}\\{value}";
+                }
             }
         }
         public static readonly DependencyProperty LeftSourceProperty =
@@ -58,7 +68,16 @@ namespace OBB_WPF
             get { return rSource; }
             set
             {
-                rSource = $"file://{Environment.CurrentDirectory}\\{value}";
+                if (string.IsNullOrWhiteSpace(value))
+                {
+                    Right.Visibility = Visibility.Hidden;
+                    rSource = "about:blank";
+                }
+                else
+                {
+                    Right.Visibility = Visibility.Visible;
+                    rSource = $"file://{Environment.CurrentDirectory}\\{value}";
+                }
             }
         }
         public static readonly DependencyProperty RightSourceProperty =
@@ -89,6 +108,10 @@ namespace OBB_WPF
             {
                 Left.Address = lSource;
                 await Left.WaitForNavigationAsync();
+            }
+            else
+            {
+                Left.Visibility = Visibility.Hidden;
             }
 
             if (!rSource.EndsWith("blank"))
