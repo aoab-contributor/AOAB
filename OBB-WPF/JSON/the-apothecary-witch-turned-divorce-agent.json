@@ -1,0 +1,719 @@
+{
+  "Cover": {
+    "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-1\\OEBPS\\Text\\cover.xhtml",
+    "Alternates": [],
+    "OtherSide": null,
+    "SortOrder": "10102001"
+  },
+  "Author": "Kosuzu Kobato",
+  "AuthorSort": "KOBATO, KOSUZU",
+  "Name": "The Apothecary Witch Turned Divorce Agent",
+  "InternalName": "the-apothecary-witch-turned-divorce-agent",
+  "UnusedSources": [
+    {
+      "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-1\\OEBPS\\Text\\copyright.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10116035"
+    },
+    {
+      "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-1\\OEBPS\\Text\\signup.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10115034"
+    },
+    {
+      "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-1\\OEBPS\\Text\\toc.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10114033"
+    },
+    {
+      "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-1\\OEBPS\\Text\\tocimg.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10102002"
+    },
+    {
+      "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-2\\OEBPS\\Text\\copyright.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10214033"
+    },
+    {
+      "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-2\\OEBPS\\Text\\cover.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10202001"
+    },
+    {
+      "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-2\\OEBPS\\Text\\signup.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10213032"
+    },
+    {
+      "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-2\\OEBPS\\Text\\toc.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10212031"
+    },
+    {
+      "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-2\\OEBPS\\Text\\tocimg.xhtml",
+      "Alternates": [],
+      "OtherSide": null,
+      "SortOrder": "10202002"
+    }
+  ],
+  "Chapters": [
+    {
+      "CType": 0,
+      "ChapType": "Story",
+      "Name": "Case 1: Crown Prince Abel",
+      "SortOrder": "101",
+      "Sources": [
+        {
+          "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-1\\OEBPS\\Text\\color1.xhtml",
+          "Alternates": [],
+          "OtherSide": null,
+          "SortOrder": "10114029"
+        },
+        {
+          "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-1\\OEBPS\\Text\\color2.xhtml",
+          "Alternates": [],
+          "OtherSide": null,
+          "SortOrder": "10114030"
+        },
+        {
+          "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-1\\OEBPS\\Text\\color3.xhtml",
+          "Alternates": [],
+          "OtherSide": null,
+          "SortOrder": "10114031"
+        },
+        {
+          "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-1\\OEBPS\\Text\\color4.xhtml",
+          "Alternates": [],
+          "OtherSide": null,
+          "SortOrder": "10114032"
+        }
+      ],
+      "LinkedChapters": [],
+      "EndsBeforeLine": "",
+      "StartsAtLine": "",
+      "SubSections": [],
+      "Chapters": [
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "1. Carla, the Apothecary Witch",
+          "SortOrder": "10102",
+          "Sources": [
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-1\\OEBPS\\Text\\chapter1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10103003"
+            },
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-1\\OEBPS\\Text\\insert1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10103004"
+            },
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-1\\OEBPS\\Text\\chapter1_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10103005"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "2. Thane, the Knight of the Royal Guard",
+          "SortOrder": "10103",
+          "Sources": [
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-1\\OEBPS\\Text\\chapter2.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10104006"
+            },
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-1\\OEBPS\\Text\\insert2.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10104007"
+            },
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-1\\OEBPS\\Text\\chapter2_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10104008"
+            },
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-1\\OEBPS\\Text\\insert3.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10104009"
+            },
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-1\\OEBPS\\Text\\chapter2_2.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10104010"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "3. At the Royal Castle",
+          "SortOrder": "10104",
+          "Sources": [
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-1\\OEBPS\\Text\\chapter3.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10105011"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "4. The Residence of the Duke of Hemmings",
+          "SortOrder": "10105",
+          "Sources": [
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-1\\OEBPS\\Text\\chapter4.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10106012"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "5. To the Academy",
+          "SortOrder": "10106",
+          "Sources": [
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-1\\OEBPS\\Text\\chapter5.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10107013"
+            },
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-1\\OEBPS\\Text\\insert4.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10107014"
+            },
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-1\\OEBPS\\Text\\chapter5_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10107015"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "6. Crown Prince Abel’s Circumstances",
+          "SortOrder": "10107",
+          "Sources": [
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-1\\OEBPS\\Text\\chapter6.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10108016"
+            },
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-1\\OEBPS\\Text\\insert5.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10108017"
+            },
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-1\\OEBPS\\Text\\chapter6_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10108018"
+            },
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-1\\OEBPS\\Text\\insert6.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10108019"
+            },
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-1\\OEBPS\\Text\\chapter6_2.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10108020"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "7. At the Knights’ Brigade",
+          "SortOrder": "10108",
+          "Sources": [
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-1\\OEBPS\\Text\\chapter7.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10109021"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "8. To the Royal Castle Once Again",
+          "SortOrder": "10109",
+          "Sources": [
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-1\\OEBPS\\Text\\chapter8.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10110022"
+            },
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-1\\OEBPS\\Text\\insert7.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10110023"
+            },
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-1\\OEBPS\\Text\\chapter8_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10110024"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "9. See You Tomorrow at the Apothecary in the Back Alley",
+          "SortOrder": "10110",
+          "Sources": [
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-1\\OEBPS\\Text\\chapter9.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10111025"
+            },
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-1\\OEBPS\\Text\\insert8.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10111026"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "Side Story: From White to Navy",
+          "SortOrder": "10111",
+          "Sources": [
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-1\\OEBPS\\Text\\side.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10112027"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        }
+      ]
+    },
+    {
+      "CType": 0,
+      "ChapType": "Story",
+      "Name": "Case 2 and the Gathering of the Witches",
+      "SortOrder": "102",
+      "Sources": [
+        {
+          "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-2\\OEBPS\\Text\\color1.xhtml",
+          "Alternates": [],
+          "OtherSide": null,
+          "SortOrder": "10212027"
+        },
+        {
+          "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-2\\OEBPS\\Text\\color2.xhtml",
+          "Alternates": [],
+          "OtherSide": null,
+          "SortOrder": "10212028"
+        },
+        {
+          "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-2\\OEBPS\\Text\\color3.xhtml",
+          "Alternates": [],
+          "OtherSide": null,
+          "SortOrder": "10212029"
+        },
+        {
+          "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-2\\OEBPS\\Text\\color4.xhtml",
+          "Alternates": [],
+          "OtherSide": null,
+          "SortOrder": "10212030"
+        }
+      ],
+      "LinkedChapters": [],
+      "EndsBeforeLine": "",
+      "StartsAtLine": "",
+      "SubSections": [],
+      "Chapters": [
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "1. Carla’s Apothecary",
+          "SortOrder": "10202",
+          "Sources": [
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-2\\OEBPS\\Text\\chapter1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10203003"
+            },
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-2\\OEBPS\\Text\\insert1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10203004"
+            },
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-2\\OEBPS\\Text\\chapter1_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10203005"
+            },
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-2\\OEBPS\\Text\\insert2.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10203006"
+            },
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-2\\OEBPS\\Text\\chapter1_2.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10203007"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "2. Herbs and the Gathering of the Witches",
+          "SortOrder": "10203",
+          "Sources": [
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-2\\OEBPS\\Text\\chapter2.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10204008"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "3. The Queen’s Circumstances",
+          "SortOrder": "10204",
+          "Sources": [
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-2\\OEBPS\\Text\\chapter3.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10205009"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "4. Lakebell",
+          "SortOrder": "10205",
+          "Sources": [
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-2\\OEBPS\\Text\\chapter4.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10206010"
+            },
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-2\\OEBPS\\Text\\insert3.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10206011"
+            },
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-2\\OEBPS\\Text\\chapter4_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10206012"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "5. The Terms of the Exchange",
+          "SortOrder": "10206",
+          "Sources": [
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-2\\OEBPS\\Text\\chapter5.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10207013"
+            },
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-2\\OEBPS\\Text\\insert4.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10207014"
+            },
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-2\\OEBPS\\Text\\chapter5_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10207015"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "6. The Residence of the Viscount of Marsden",
+          "SortOrder": "10207",
+          "Sources": [
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-2\\OEBPS\\Text\\chapter6.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10208016"
+            },
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-2\\OEBPS\\Text\\insert5.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10208017"
+            },
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-2\\OEBPS\\Text\\chapter6_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10208018"
+            },
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-2\\OEBPS\\Text\\insert6.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10208019"
+            },
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-2\\OEBPS\\Text\\chapter6_2.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10208020"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "7. The Foresight Witch",
+          "SortOrder": "10208",
+          "Sources": [
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-2\\OEBPS\\Text\\chapter7.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10209021"
+            },
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-2\\OEBPS\\Text\\insert7.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10209022"
+            },
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-2\\OEBPS\\Text\\chapter7_1.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10209023"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "8. At the Theater",
+          "SortOrder": "10209",
+          "Sources": [
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-2\\OEBPS\\Text\\chapter8.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10210024"
+            },
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-2\\OEBPS\\Text\\insert8.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10210025"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        }
+      ]
+    },
+    {
+      "CType": 0,
+      "ChapType": "Story",
+      "Name": "Afterwords",
+      "SortOrder": "999",
+      "Sources": [],
+      "LinkedChapters": [],
+      "EndsBeforeLine": "",
+      "StartsAtLine": "",
+      "SubSections": [],
+      "Chapters": [
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "Volume 1",
+          "SortOrder": "10112",
+          "Sources": [
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-1\\OEBPS\\Text\\afterword.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10113028"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        },
+        {
+          "CType": 0,
+          "ChapType": "Story",
+          "Name": "Volume 2",
+          "SortOrder": "10210",
+          "Sources": [
+            {
+              "File": "the-apothecary-witch-turned-divorce-agent\\the-apothecary-witch-turned-divorce-agent-volume-2\\OEBPS\\Text\\afterword.xhtml",
+              "Alternates": [],
+              "OtherSide": null,
+              "SortOrder": "10211026"
+            }
+          ],
+          "LinkedChapters": [],
+          "EndsBeforeLine": "",
+          "StartsAtLine": "",
+          "SubSections": [],
+          "Chapters": []
+        }
+      ]
+    }
+  ]
+}

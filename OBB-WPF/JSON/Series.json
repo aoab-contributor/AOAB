@@ -21167,7 +21167,9 @@
         "ApiSlug": "the-apothecary-witch-turned-divorce-agent-volume-1",
         "FileName": "the-apothecary-witch-turned-divorce-agent-volume-1.epub",
         "Title": "The Apothecary Witch Turned Divorce Agent: Volume 1",
-        "EditedBy": [],
+        "EditedBy": [
+          "kuali"
+        ],
         "Published": "2023-04-27",
         "Order": 101
       },
@@ -21175,7 +21177,9 @@
         "ApiSlug": "the-apothecary-witch-turned-divorce-agent-volume-2",
         "FileName": "the-apothecary-witch-turned-divorce-agent-volume-2.epub",
         "Title": "The Apothecary Witch Turned Divorce Agent: Volume 2",
-        "EditedBy": [],
+        "EditedBy": [
+          "kuali"
+        ],
         "Published": "2023-07-05",
         "Order": 102
       }
