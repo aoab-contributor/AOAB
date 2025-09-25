@@ -3,7 +3,7 @@
     public enum CharacterSheets
     {
         All,
-        PerPart,
+        LastOnePerPart,
         None
     }
 }

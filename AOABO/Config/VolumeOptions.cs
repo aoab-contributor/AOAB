@@ -212,7 +212,7 @@ namespace AOABO.Config
             public ComfyLifeSetting ComfyLifeChapters { get; set; } = ComfyLifeSetting.VolumeEnd;
             [JsonIgnore]
             public string ComfyLifeChaptersSetting { get { return BonusChapterSettingText(ComfyLifeChapters); } }
-            public CharacterSheets CharacterSheets { get; set; } = CharacterSheets.PerPart;
+            public CharacterSheets CharacterSheets { get; set; } = CharacterSheets.LastOnePerPart;
             [JsonIgnore]
             public string CharacterSheetsSetting
             {
@@ -220,7 +220,7 @@ namespace AOABO.Config
                 {
                     switch (CharacterSheets)
                     {
-                        case CharacterSheets.PerPart:
+                        case CharacterSheets.LastOnePerPart:
                             return "one per Part";
                         case CharacterSheets.All:
                             return "all of them";

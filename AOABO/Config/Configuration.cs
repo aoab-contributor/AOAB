@@ -496,7 +496,7 @@ namespace AOABO.Config
                         Console.WriteLine("0 - All of them.");
                         Console.WriteLine("1 - Last one in each part.");
                         Console.WriteLine("2 - None");
-                        Options.Extras.CharacterSheets = CharacterSheets.PerPart;
+                        Options.Extras.CharacterSheets = CharacterSheets.LastOnePerPart;
                         key = Console.ReadKey();
                         switch (key.KeyChar)
                         {

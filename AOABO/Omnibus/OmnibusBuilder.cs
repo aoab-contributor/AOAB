@@ -392,7 +392,7 @@ namespace AOABO.Omnibus
             {
                 chapters.Add(volume.CharacterSheet);
             }
-            else if ((Configuration.Options_.Extras.CharacterSheets == CharacterSheets.PerPart) && (volume.CharacterSheet != null) && volume.CharacterSheet.PartSheet && filter(volume.CharacterSheet))
+            else if ((Configuration.Options_.Extras.CharacterSheets == CharacterSheets.LastOnePerPart) && (volume.CharacterSheet != null) && volume.CharacterSheet.PartSheet && filter(volume.CharacterSheet))
             {
                 chapters.Add(volume.CharacterSheet);
             }

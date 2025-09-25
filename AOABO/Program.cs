@@ -4,16 +4,23 @@ using AOABO.OCR;
 using AOABO.Omnibus;
 using Core;
 using Core.Downloads;
+using System;
 using System.CommandLine;
+using System.Linq.Expressions;
+using System.Reflection;
 
 #if DEBUG
 using System.Text;
 using System.Text.Json;
 using Windows.Gaming.Input;
+using Windows.Globalization.DateTimeFormatting;
+using Windows.Media.Audio;
+using static AOABConsole;
+using static AOABO.Config.VolumeOptions;
 #endif
 
 
-class AOABConsole
+static class AOABConsole
 {
     public const string interactiveDescription = "Run interactively. [default behavior]";
     public const string createDescription = "Create an Ascendance of a Bookworm Omnibus";
@@ -22,6 +29,61 @@ class AOABConsole
     public const string downloadDescription = "Download Updates";
     public const string ocrDescription = "OCR Manga Bonus Written Chapters";
     public const string invalidCredentials = "Unable to validate credentials";
+
+    //public enum Structure : int
+    //{
+    //    Flat = 0,
+    //    ByPart = 1,
+    //    ByPartAndVolume = 2,
+    //    BySeason = 3
+    //}
+
+    static void SetIfNotNull<T>(Action<T> doStorage, T? value) where T: unmanaged
+    {
+        if (value != null)
+        {
+            doStorage((T)value);
+        }
+    }
+
+    static void SetIfNotNull<T>(Action<T> doStorage, T? value) where T : class
+    {
+        if (value != null)
+        {
+            doStorage((T)value);
+        }
+    }
+
+    public static void MaybeSet<Obj, T>(this Obj? obj, Expression<Func<Obj, T>> expr, T? value) where Obj : class
+    {
+        if (obj != null && value != null)
+        {
+            if (expr.Body is MemberExpression { Member: PropertyInfo prop })
+            {
+                prop.SetValue(obj, value);
+            }
+        }
+    }
+
+
+    public enum ImageLimit
+    {
+        NoLimit,
+        LimitWidth,
+        LimitHeight,
+        LimitWidthAndHeight
+    }
+
+    public enum OmnibusScope : int
+    {  
+        EntireSeries = 0,
+        Part1 = 1,
+        Part2 = 2,
+        Part3 = 3,
+        Part4 = 4,
+        Part5 = 5,
+        Fanbooks = 6
+    };
 
     private static string normalizeFolder(string? folderPath)
     {
@@ -46,24 +108,27 @@ class AOABConsole
 
     static async Task<int> Main(string[] args)
     {
+        // TODO: Clean up arguments - remove "no-*" arguements
+
+
         int returnCode = 0;
         HttpClient client = new HttpClient();
         var rootCommand = new RootCommand("Ascendance of a Bookworm Omnibus Creator");
 
 
         // Global options //////////////////////////////////////////////////////////////////////////////
-        var configFileOption  = new Option<string>(    name: "--config",
-                                                       description: "Configuration file path",
-                                                       getDefaultValue: () => Configuration.defaultConfigFile);       
-        var accountFileOption = new Option<string>(    name: "--account",
-                                                       description: "Account file path",
-                                                       getDefaultValue: () => Login.defaultAccountFile);
-        var inputFolder       = new Option<string>(    aliases: new string[] { "--input", "--download" },
-                                                       description: "The Source folder - where ebooks will be downloaded and used for generating the omnibus",
-                                                       getDefaultValue: () => string.Empty);
-        var outputFolder      = new Option<string>(    name: "--output",
-                                                       description: "The destination folder - where the omnibus will be generated",
-                                                       getDefaultValue: () => string.Empty );
+        Option<string> configFileOption  = new (name: "--config",
+                                                description: "Configuration file path",
+                                                getDefaultValue: () => Configuration.defaultConfigFile);
+        Option<string> accountFileOption = new (name: "--account",
+                                                description: "Account file path",
+                                                getDefaultValue: () => Login.defaultAccountFile);
+        Option<string> inputFolder       = new (name: "--input",
+                                                description: "The Source folder - where ebooks will be downloaded and used for generating the omnibus",
+                                                getDefaultValue: () => string.Empty);
+        Option<string> outputFolder      = new (name: "--output",
+                                                description: "The destination folder - where the omnibus will be generated",
+                                                getDefaultValue: () => string.Empty );
         rootCommand.AddGlobalOption(configFileOption);
         rootCommand.AddGlobalOption(accountFileOption);
         rootCommand.AddGlobalOption(inputFolder);
@@ -89,9 +154,9 @@ class AOABConsole
 
 
         // create command ///////////////////////////////////////////////////////////////////////////////////////////
-        var omnibusPart = new Option<int>(name: "--part",
-                                          description: $"Which parts to include in the omnibus creation\n  {OmnibusBuilder.ScopeEntireSeries}\n  {OmnibusBuilder.ScopePart1}\n  {OmnibusBuilder.ScopePart2}\n  {OmnibusBuilder.ScopePart3}\n  {OmnibusBuilder.ScopePart4}\n  {OmnibusBuilder.ScopePart5}\n  {OmnibusBuilder.ScopeFanbooks}\n",
-                                          getDefaultValue: () => 0);
+        Option<OmnibusScope> omnibusPart = new (name: "--part",
+                                                description: "Parts to include in the omnibus creation",
+                                                getDefaultValue: () => OmnibusScope.EntireSeries);
         var createCommand = new Command("create", createDescription)
         {
             omnibusPart
@@ -102,7 +167,7 @@ class AOABConsole
                 Configuration.Initialize(normalizeFile(config));
                 Configuration.SetFolders(normalizeFolder(input), normalizeFolder(output));
                 Configuration.PersistOptions();
-                await OmnibusBuilder.BuildOmnibus(Convert.ToString(part)[0]);
+                await OmnibusBuilder.BuildOmnibus(Convert.ToString(part)![0]);
             }, 
             configFileOption, inputFolder, outputFolder, omnibusPart);
 
@@ -128,9 +193,9 @@ class AOABConsole
 
 
         // Download Command ////////////////////////////////////////////////////////////////////////////////////////
-        var skipUpdateFiles = new Option<bool>(name: "--no-update",
-                                               description: "Do not download books updated books",
-                                               getDefaultValue: () => false);
+        Option<bool> skipUpdateFiles = new (name: "--no-update",
+                                            description: "Do not download books updated books",
+                                            getDefaultValue: () => false);
         var downloadCommand = new Command("download", downloadDescription)
         {
             skipUpdateFiles
@@ -183,9 +248,192 @@ class AOABConsole
             configFileOption, accountFileOption, inputFolder);
 
 
-        var updateCommand = new Command("update", updateDescription);
+        // Update command //////////////////////////////////////////////////////////////////////////////
+
+        //--structure 0/1/2/3 [0] -- 0: Flat structure, 1: By Part, 2: By Part and Volume, 3: By Season
+
+        Option<OutputStructure?> optionStructure = new (name: "--structure",
+                                                        description: "How the omnibus should be structured");
+        //--structure-start-year [5]
+        Option<int?> optionBySeasonStartYear = new (name: "--start-year",
+                                                    description: $"When --structure={OutputStructure.Seasons.ToString()}, the year that should be used for the story beginning (Myne is 5 at the start of P1V1)");
+
+        //--structure-year-format 0/1 [1]
+        Option<int?> optionBySeasonYearFormat = new (name: "--year-format",
+                                                     description: $"When --structure={OutputStructure.Seasons.ToString()}, how to format the year\n [0] XX\n [1] Year XX\n");
+
+        //--chapter-include-regular 0/1/2 [0]
+        Option<bool?> optionIncludeRegular = new (name:"--no-include-regular-chapters",
+                                                  description: "Do not include regular Chapters (Myne POV + Prologues and Epilogues)");
+
+        //--chapter-include-bonus-chapters 0/1/2 [0]
+        Option<BonusChapterSetting?> optionIncludeBonus = new (name: "--include-bonus-chapters",
+                                                               description: "Include Bonus Chapters");
+
+        //--chapter-include-manga-chapters
+        Option<BonusChapterSetting?> optionIncludeManga = new ( name: "--include-manga-chapters",
+                                                                description: "Include Manga Chapters");
+        //--chapter-match-header [True]
+        Option<bool?> optionMatchHeader = new (name:"--match-headers",
+                                               description: "Do not update chapter headers to match the names in the index");
+
+
+
+        //--image-chapter-inserts [True]
+        Option<bool?> optionChapterInserts = new ( name: "--insert-images",
+                                                   description: "Skip chapter insert images");
+
+        //--image-bonus-image-gallery 0/1/2 [2]    0 - The Start of each Volume, 1 - The End of each Volume, 2 - None
+        Option<GallerySetting?> optionBonusImageGallery = new (name: "--bonus-image-gallery",
+                                                               description: "Include a bonus image gallery");
+
+        //--image-chapter-insert-gallery    [2]    0 - The Start of each Volume, 1 - The End of each Volume, 2 - None
+        Option<GallerySetting?> optionInsertImageGallery = new (name: "--insert-image-gallery",
+                                                                description: "Include chapter insert gallery");
+
+        Option<ImageLimit?> optionLimitImageSize = new (name: "--limit-image-size",
+                                                        description: "Indictate whether image size should be limited. Use --maximumWidth and --maximumHeight to set the size limit",
+                                                        getDefaultValue: () => ImageLimit.NoLimit);
+
+        //--image-set-maximum-width [null]
+        Option<int?> optionMaximumWidth = new (name: "--maximum-width",
+                                               description: "Set the maximum image width in pixels");
+        //--image-set-maximum-height [null]
+        Option<int?> optionMaximumHeight = new (name: "--maximum-height",
+                                                description: "Set the maximum image height in pixels");
+
+        //--image-set-image-quality [90]
+        Option<int?> optionImageQuality = new (name: "--image-quality",
+                                               description: "Set resized image quality as a percentage");
+
+        //--manga-quality 1/2/3 [3]
+        Option<MangaQuality?> optionMangaQuality = new (name: "--manga-quality",
+                                                        description: "Set manga download quality (more quality means larger file)");
+
+        //--extra-comfy-life 0/1/2 [2]   0 - Place Comfy Life Chapters after the volume they were published with, 1 - Place Comfy Life Chapters at the end of the omnibus, 2 - Leave out Comfy Life Chapters
+        Option<ComfyLifeSetting?> optionComfyLife = new (name: "--comfy-life",
+                                                         description: "Include Comfy Life chapters");
+
+        //--extra-character-sheets 0/1/2 0 - All of them.  1 - Last one in each part.  2 - None
+        Option<CharacterSheets?> optionCharacterSheets = new (name: "--character-sheets",
+                                                              description: "Include character sheets");
+        //--extra-maps [True]
+        Option<bool?> optionMaps = new (name: "--no-maps",
+                                        description: "Do not include maps");
+
+        //--extra-afterwords 0/1/2    0 - Exclude Afterwords, 1 - Include Afterwords at the end of each volume, 2 - Include Afterwords at the end of the Omnibus
+        Option<AfterwordSetting?> optionAfterwords = new (name: "--afterwords",
+                                                          description: "Include afterwords");
+        //--extra-polls [True]
+        Option<bool?> optionPolls = new (name: "--no-character-polls",
+                                         description: "Skip the character polls");
+
+        //--extra-pov-collection [False]
+        Option<bool?> optionPovCollection = new (name:"--pov-collection",
+                                                 description: "Include a collection of POV chapters");
+        //--extra-pot-collection-order
+        Option<bool?> optionPovCollectionOrder = new (name: "--pov-collection-no-order-by-character",
+                                                      description: "When --pov-collection, do not order the POV collection chapter by character");
+
+
+        //--readable-internal-filenames [False]
+        Option<bool?> optionReadableFilenames = new (name: "--readable-filenames",
+                                                     description: "Use human-readable internal filenames (May cause issues with iBooks)");
+        //--folder-delete-temp [True]
+        Option<bool?> optionDeleteTemp = new (name: "--no-delete-temp-folder",
+                                              description: "Delete temporary folder once the omnibus is built");
+
+
+        var updateCommand = new Command("update", updateDescription)
+        {
+            optionStructure,
+            optionBySeasonStartYear,
+            optionBySeasonYearFormat,
+            optionIncludeRegular,
+            optionIncludeBonus,
+            optionIncludeManga,
+            optionMatchHeader,
+            optionChapterInserts,
+            optionBonusImageGallery,
+            optionInsertImageGallery,
+            optionLimitImageSize,
+            optionMaximumWidth,
+            optionMaximumHeight,
+            optionImageQuality,
+            optionMangaQuality,
+            optionComfyLife,
+            optionCharacterSheets,
+            optionMaps,
+            optionAfterwords,
+            optionPolls,
+            optionPovCollection,
+            optionPovCollectionOrder,
+            optionReadableFilenames,
+            optionDeleteTemp
+        };
         rootCommand.AddCommand(updateCommand);
-        
+        updateCommand.SetHandler((context) =>
+            {
+                string config = context.ParseResult.GetValueForOption(configFileOption)!;
+                string input = context.ParseResult.GetValueForOption(inputFolder)!;
+                string output = context.ParseResult.GetValueForOption(outputFolder)!;
+
+                var structure = context.ParseResult.GetValueForOption(optionStructure);
+                var startYear = context.ParseResult.GetValueForOption(optionBySeasonStartYear);
+                var yearFormat = context.ParseResult.GetValueForOption(optionBySeasonYearFormat);
+                var includeRegular = context.ParseResult.GetValueForOption(optionIncludeRegular);
+                var includeBonus = context.ParseResult.GetValueForOption(optionIncludeBonus);
+                var includeManga = context.ParseResult.GetValueForOption(optionIncludeManga);
+                var matchHeader = context.ParseResult.GetValueForOption(optionMatchHeader);
+                var chapterInserts = context.ParseResult.GetValueForOption(optionChapterInserts);
+                var bonusImageGallery = context.ParseResult.GetValueForOption(optionBonusImageGallery);
+                var insertImageGallery = context.ParseResult.GetValueForOption(optionInsertImageGallery);
+                var limitImageSize = context.ParseResult.GetValueForOption(optionLimitImageSize); // TODO: Add option
+                var maxWidth = context.ParseResult.GetValueForOption(optionMaximumWidth);
+                var maxHeight = context.ParseResult.GetValueForOption(optionMaximumHeight);
+                var imageQuality = context.ParseResult.GetValueForOption(optionImageQuality);
+                var mangaQuality = context.ParseResult.GetValueForOption(optionMangaQuality);
+                var comfyLife = context.ParseResult.GetValueForOption(optionComfyLife);
+                var characterSheets = context.ParseResult.GetValueForOption(optionCharacterSheets);
+                var maps = context.ParseResult.GetValueForOption(optionMaps);
+                var afterwords = context.ParseResult.GetValueForOption(optionAfterwords);
+                var polls = context.ParseResult.GetValueForOption(optionPolls);
+                var povCollection = context.ParseResult.GetValueForOption(optionPovCollection);
+                var povCollectionOrder = context.ParseResult.GetValueForOption(optionPovCollectionOrder);
+                var readableFilenames = context.ParseResult.GetValueForOption(optionReadableFilenames);
+                var deleteTemp = context.ParseResult.GetValueForOption(optionDeleteTemp);
+
+                Configuration.Initialize(normalizeFile(config));
+                Configuration.SetFolders(normalizeFolder(input), normalizeFolder(output));
+
+
+                //SetIfNotNull(x => options.OutputStructure = x, structure);
+                Configuration.Options_.MaybeSet(x => x.OutputStructure, structure);
+                Configuration.Options_.MaybeSet(x => x.StartYear, startYear);
+                Configuration.Options_.MaybeSet(x => x.OutputYearFormat, yearFormat);
+                Configuration.Options_.MaybeSet(x => x.IncludeRegularChapters, includeRegular);
+                Configuration.Options_.MaybeSet(x => x.BonusChapterSetting, includeBonus);
+                Configuration.Options_.MaybeSet(x => x.MangaChapters, includeManga);
+                Configuration.Options_.MaybeSet(x => x.UpdateChapterNames, matchHeader);
+                Configuration.Options_.MaybeSet(x => x.Image.IncludeImagesInChapters, chapterInserts);
+                Configuration.Options_.MaybeSet(x => x.Image.SplashImages, bonusImageGallery);
+                Configuration.Options_.MaybeSet(x => x.Image.ChapterImages, insertImageGallery);
+                Configuration.Options_.MaybeSet(x => x.Image.MaxWidth, maxWidth);
+                Configuration.Options_.MaybeSet(x => x.Image.MaxHeight, maxHeight);
+                Configuration.Options_.MaybeSet(x => x.Extras.ComfyLifeChapters,comfyLife);
+                Configuration.Options_.MaybeSet(x => x.Extras.CharacterSheets, characterSheets);
+                Configuration.Options_.MaybeSet(x => x.Extras.Maps, maps);
+                Configuration.Options_.MaybeSet(x => x.Extras.Afterword, afterwords);
+                Configuration.Options_.MaybeSet(x => x.Extras.Polls, polls);
+                Configuration.Options_.MaybeSet(x => x.Collection.POVChapterCollection, povCollection);
+                Configuration.Options_.MaybeSet(x => x.Collection.POVChapterOrdering, povCollectionOrder);
+                Configuration.Options_.MaybeSet(x => x.UseHumanReadableFileStructure, readableFilenames);
+                Configuration.Options_.MaybeSet(x => x.Folder.DeleteTempFolder, deleteTemp);
+
+                Configuration.PersistOptions();
+
+            });
+
 
 
         await rootCommand.InvokeAsync(args);
